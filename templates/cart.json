@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {},
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ]
+    },
+    "popular-products": {
+      "type": "popular-products",
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "xl"
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "popular-products"
+  ]
+}

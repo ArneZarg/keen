@@ -1,0 +1,392 @@
+<!doctype html>
+<html
+  class="no-js"
+  lang="{{ request.locale.iso_code }}"
+  data-scheme="{{ settings.color_scheme }}"
+>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    {%- if settings.favicon != blank -%}
+      <link
+        rel="icon"
+        type="image/png"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
+      >
+    {%- endif -%}
+
+    {%- unless settings.type_header_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
+    <title>{{ page_title }}</title>
+
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    {% render 'meta-tags' %}
+
+    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+
+    {% comment %} DYNAMICALLY RETURNS ALL SCRIPTS REQUIRED BY SHOPIFY. {% endcomment %}
+    {{ content_for_header }}
+
+    {% comment %} FONTS {% endcomment %}
+    {% render 'fonts' %}
+
+    {% comment %} DARK MODE VARIABLES {% endcomment %}
+    {% render 'color-vars' %}
+
+    {% comment %} BASIC VARIABLES AND STYLES {% endcomment %}
+    {% render 'base-vars-styles' %}
+
+    {% comment %} SWIPER MIN CSS {% endcomment %}
+    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} BASIC STYLES {% endcomment %}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} RICH TEXT (RTE) STYLES {% endcomment %}
+    {{ 'component-rte.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} PREDICTIVE SEARCH STYLES {% endcomment %}
+    {%- if settings.predictive_search_enabled or settings.predictive_search_header_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+
+    {% comment %} CART & CART DRAWER {% endcomment %}
+    {% comment %} If cart drawer is disabled, the assets below are loaded in the file main-cart-items.liquid {% endcomment %}
+    {%- if settings.enable_cart_drawer -%}
+      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+      {{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+
+      {% if settings.show_shipping or settings.show_cart_recommended_products %}
+        {{ 'component-cart-shipping.css' | asset_url | stylesheet_tag }}
+      {% endif %}
+    {%- endif -%}
+
+    {% comment %} PRODUCTS STYLES {% endcomment %}
+    {% assign is_preload = false %}
+    {%- if request.page_type == 'product' -%}
+      {%- assign is_preload = true -%}
+    {%- endif -%}
+    {{ 'section-main-product.css' | asset_url | stylesheet_tag: preload: is_preload }}
+    {%- if settings.quickview_show or settings.show_on_mobile -%}
+      {{- 'component-deferred-media.css' | asset_url | stylesheet_tag -}}
+      {{- 'quick-add.css' | asset_url | stylesheet_tag: preload: is_preload -}}
+      <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    {%- elsif settings.settings.add_to_cart_enabled -%}
+      <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {% comment %} FONTS PRELOAD {% endcomment %}
+    {%- unless settings.type_body_font.system? -%}
+      {% comment %}theme-check-disable AssetPreload{% endcomment %}
+      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+      {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    {%- endunless -%}
+    {%- unless settings.type_header_font.system? -%}
+      {% comment %}theme-check-disable AssetPreload{% endcomment %}
+      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+      {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    {%- endunless -%}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
+    </script>
+
+    <script src="{{ 'gsap.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
+
+    {% if settings.show_back_to_top %}
+      <script src="{{ 'scroll-top.js' | asset_url }}" defer="defer"></script>
+    {% endif %}
+    {% style %}
+      @font-face {
+        font-family: 'Standie';
+        src: url('https://cdn.shopify.com/s/files/1/0641/9169/2992/files/Standie.woff2?v=1742328382') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'FillingStation';
+        src: url('https://cdn.shopify.com/s/files/1/0641/9169/2992/files/FillingStation.ttf?v=1742327702') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Balboa Light';
+        src: url('https://cdn.shopify.com/s/files/1/0641/9169/2992/files/fonnts.com-Balboa_W05_Light.ttf?v=1743190136') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .template-page-landing-page .shopify-section-header {
+    display: none !important;
+  }
+
+  .template-page.template-page-landing-page .footer-block.footer-menu-block,
+  .template-page.template-page-landing-page .footer-block.footer-subscribe-block,
+  .template-page.template-page-landing-page .footer-block.footer-info-block,
+  .template-page.template-page-landing-page .accordion, /* Most mobile footers use .accordion */
+  .template-page.template-page-landing-page .footer-blockdetails-content,
+  .template-page.template-page-landing-page .footer-menu-block-list,
+  .template-page.template-page-landing-page .footer-menu-block-listitem {
+    display: none !important;
+  }
+
+ /* Hide header */
+.template-product-landing-page-new .shopify-section-header {
+  display: none !important;
+}
+
+/* Hide specific footer blocks */
+.template-product.template-product-landing-page-new .footer-block.footer-menu-block,
+.template-product.template-product-landing-page-new .footer-block.footer-subscribe-block,
+.template-product.template-product-landing-page-new .footer-block.footer-info-block,
+.template-product.template-product-landing-page-new .accordion, /* Most mobile footers use .accordion */
+.template-product.template-product-landing-page-new .footer-blockdetails-content,
+.template-product.template-product-landing-page-new .footer-menu-block-list,
+.template-product.template-product-landing-page-new .footer-menu-block-listitem {
+  display: none !important;
+}
+.template-product-buffalo-chutney-probiotic .shopify-section-header {
+  display: none !important;
+}
+
+.template-product.template-product-buffalo-chutney-probiotic .footer-block.footer-menu-block,
+.template-product.template-product-buffalo-chutney-probiotic .footer-block.footer-subscribe-block,
+.template-product.template-product-buffalo-chutney-probiotic .footer-block.footer-info-block,
+.template-product.template-product-buffalo-chutney-probiotic .accordion,
+.template-product.template-product-buffalo-chutney-probiotic .footer-blockdetails-content,
+.template-product.template-product-buffalo-chutney-probiotic .footer-menu-block-list,
+.template-product.template-product-buffalo-chutney-probiotic .footer-menu-block-listitem {
+  display: none !important;
+}
+
+  {% endstyle %}
+    <script>
+      let cscoDarkMode = {};
+
+      (function () {
+        const body = document.querySelector('html[data-scheme]');
+
+        cscoDarkMode = {
+          init: function (e) {
+            this.initMode(e);
+            window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+              this.initMode(e);
+            });
+
+            window.addEventListener('load', () => {
+              const toggleBtns = document.querySelectorAll('.header__toggle-scheme');
+              toggleBtns.forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  if ('auto' === body.getAttribute('data-scheme')) {
+                    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                      cscoDarkMode.changeScheme('light', true);
+                    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+                      cscoDarkMode.changeScheme('dark', true);
+                    }
+                  } else {
+                    if ('dark' === body.getAttribute('data-scheme')) {
+                      cscoDarkMode.changeScheme('light', true);
+                    } else {
+                      cscoDarkMode.changeScheme('dark', true);
+                    }
+                  }
+                });
+              });
+            });
+          },
+          initMode: function (e) {
+            let siteScheme = false;
+            switch (
+              '{{ settings.color_scheme }}' // Field. User’s system preference.
+            ) {
+              case 'dark':
+                siteScheme = 'dark';
+                break;
+              case 'light':
+                siteScheme = 'light';
+                break;
+              case 'system':
+                siteScheme = 'auto';
+                break;
+            }
+            if ('{{ settings.dark_mode_toggle }}') {
+              // Field. Enable dark/light mode toggle.
+              if ('light' === localStorage.getItem('_color_schema')) {
+                siteScheme = 'light';
+              }
+              if ('dark' === localStorage.getItem('_color_schema')) {
+                siteScheme = 'dark';
+              }
+            }
+            if (siteScheme && siteScheme !== body.getAttribute('data-scheme')) {
+              this.changeScheme(siteScheme, false);
+            }
+          },
+          changeScheme: function (siteScheme, cookie) {
+            body.classList.add('scheme-toggled');
+            body.setAttribute('data-scheme', siteScheme);
+            if (cookie) {
+              localStorage.setItem('_color_schema', siteScheme);
+            }
+            setTimeout(() => {
+              body.classList.remove('scheme-toggled');
+            }, 100);
+          },
+        };
+      })();
+
+      cscoDarkMode.init();
+
+      document.addEventListener('shopify:section:load', function () {
+        setTimeout(() => {
+          cscoDarkMode.init();
+        }, 100);
+      });
+
+      const calcScrollbarWidth = () => {
+        const div = document.createElement('div');
+        div.style.cssText = 'width: 100px; height: 100px; overflow-y: scroll; position: absolute; top: -9999px;';
+        document.body.appendChild(div);
+        const scrollbarWidth = div.offsetWidth - div.clientWidth;
+        document.body.removeChild(div);
+        document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+      };
+
+      window.addEventListener('DOMContentLoaded', calcScrollbarWidth);
+    </script>
+
+    {% comment %} slick CSS and JS {% endcomment %}
+    {% comment %} these documents and cdn are for the section “new-section-hero” if it is possible to continue using slick for the future sliders of the site {% endcomment %}
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      {{ 'slick.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'slick.js' | asset_url }}" defer></script>
+    {% comment %} end slick CSS and JS {% endcomment %}
+<!-- Brevo Conversations {literal} -->
+<script>
+    (function(d, w, c) {
+        w.BrevoConversationsID = '688d410c45d8ed402a01804b';
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'BrevoConversations');
+</script>
+<!-- /Brevo Conversations {/literal} -->
+  </head>
+
+  <body class="template-{{ template.name }} template-{{ template | replace: '.', '-' }}">
+    <a
+      class="skip-to-content-link button visually-hidden"
+      href="#MainContent"
+    >
+      {{ 'accessibility.skip_to_text' | t }}
+    </a>
+
+    {% sections 'header-group' %}
+    {% sections 'overlay-group' %}
+    {% if settings.show_breadcrumbs %}
+      {% render 'breadcrumbs' %}
+    {% endif %}
+
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+    {% sections 'footer-group' %}
+
+    {% if settings.show_back_to_top %}
+      {% render 'scroll-top' %}
+    {% endif %}
+
+    {%- if request.page_type != 'cart' and settings.enable_cart_drawer -%}
+      {%- render 'cart-drawer' -%}
+    {%- endif -%}
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">
+        {{ 'accessibility.refresh_page' | t }}
+      </li>
+    </ul>
+
+    <script>
+      
+      
+      window.routes = {
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}',
+        cart_url: '{{ routes.cart_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
+      };
+
+      window.cartStrings = {
+        error: `{{ 'sections.cart.cart_error' | t }}`,
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t }}`,
+        empty: `{{ 'general.cart.empty_cart' | t }}`,
+        shop_now: `{{ 'customer.account.account_button_shop' | t }}`,
+        collections_url: `{{ routes.collections_url | sort_by: 'best-selling' }}`
+      }
+
+      window.variantStrings = {
+        addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+        soldOut: `{{ 'products.product.sold_out' | t }}`,
+        unavailable: `{{ 'products.product.unavailable' | t }}`,
+        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`
+      }
+
+      window.theme = {
+        moneyFormat: {{ shop.money_format | json }},
+        quickviewMore: `{{ 'general.card.view__more' | t }}`,
+        reviews: `{{ 'products.product.reviews' | t }}`
+      }
+
+      const calcVh = () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      }
+      window.addEventListener("load", calcVh);
+      window.addEventListener("resize", calcVh);
+
+
+    </script>
+
+    {%- if settings.predictive_search_enabled or settings.predictive_search_header_enabled -%}
+      <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+    <script src="{{ 'product-model.js' | asset_url }}" defer></script>
+  </body>
+</html>

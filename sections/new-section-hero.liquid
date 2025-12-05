@@ -1,0 +1,519 @@
+{{ 'hero.css' | asset_url | stylesheet_tag  }}
+
+<style>
+.hero .card-hero a {
+    color: {{ section.settings.text_button_hero_color }};
+    border-color:{{ section.settings.text_button_hero_color }};
+    background: {{ section.settings.background_primary }}
+  }
+
+  .hero .card-hero a:hover {
+    color: {{ section.settings.text_button_hero_color_hover }};
+    border-color:{{ section.settings.text_button_hero_color_hover }};
+    background-color:{{ section.settings.border }};
+    border: 2px solid
+  }
+ 
+
+.hero .card-hero {
+  z-index: 2;
+}
+
+section.hero.custom-flex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 0;
+    gap: 0;
+    overflow: hidden;
+}
+
+.hero.custom-flex video {
+    position: relative;
+}
+
+section.hero.custom-flex .hero-banner-video {
+    width: calc(50% - 10px)
+}
+
+section.hero.custom-flex .card-hero {
+  position: relative;
+    transform: none;
+    top: initial;
+    left: initial;
+    right: initial;
+    width: calc(50%);
+    /* height: 100%; */
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.hero.custom-flex .card-hero .h1 {
+  font-size: 44px;
+}
+
+hero.custom-flex .hero_review svg {
+  width: 100px
+}
+a.hero_btn + .hero_btn {
+    margin-left: 30px;
+    color: {{ section.settings.text_button_secondary }};
+    background: {{ section.settings.text_button_secondary_bg }};
+    border-color: {{ section.settings.border_secondary }};
+    border: 2px solid
+}
+
+a.hero_btn + .hero_btn:hover {
+  color: {{ section.settings.text_button_hero_color_hover_secondary }};
+  background: {{ section.settings.background_hover_secondary }};
+  border: 2px solid
+}
+
+
+
+section.hero.custom-flex li {
+  list-style: none;
+  padding-left: 0; 
+}
+
+section.hero.custom-flex li::before {
+  content: "✓";
+  margin-right: 5px;
+  color: green;
+}
+
+
+section.hero.custom-flex li {
+  list-style: none;
+  padding-left: 0; 
+}
+
+section.hero.custom-flex li::before {
+  content: "✓";
+  margin-right: 5px;
+  color: green;
+}
+
+.hero.custom-flex .hero_review svg {
+  width: 100px
+}
+@media(max-width: 991px) {
+    section.hero.custom-flex {
+      flex-direction: column;
+      padding: 0;
+      height: auto;
+      gap: 0;
+    }
+    .img-hero-mobile {
+        width: 100%;
+    }
+    section.hero.custom-flex .hero-banner-video {
+      width: 100%;
+    }
+
+    section.hero.custom-flex .card-hero {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero.custom-flex .card-hero p {
+        margin: auto;
+        max-width: 100%;
+        text-align: center;
+        line-height: normal;
+        padding-top: 0;
+    }
+
+    .hero.custom-flex .herotext_slider h3 {
+        text-align: center
+    }
+   .hero.custom-flex .card-hero h1 {
+       text-align: center;
+       font-size: 26px;
+   }
+   section.hero.custom-flex ul {
+    padding: 0;
+   }
+
+    section.hero.custom-flex li {
+        text-align: left;
+    }
+    a.hero_btn + .hero_btn  {
+    margin: 0;
+    margin-top: 10px
+  }
+
+  @media(max-width: 767px) {
+    .hero.custom-flex .hero-banner-video {
+      min-height: auto;
+    }
+
+    section.hero.custom-flex .card-hero .h1 {
+      font-size: 34px;
+    }
+  }
+}
+</style>
+
+<section class="hero custom-flex">
+
+   {% if section.settings.layout == "image" %}
+    <div class="img-hero-mobile">
+      {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1600
+            | image_tag:
+              class: "heroimg w100 sm-hide",
+              loading: 'lazy',
+              sizes: sizes,
+              widths: widths,
+              fetchpriority: fetch_priority
+          }}
+      {%- endif -%}
+      {%- if section.settings.mobile_image != blank -%}
+          {{
+            section.settings.mobile_image
+            | image_url: width: 768
+            | image_tag:
+              class: "moheroimg w100 lg-hide",
+              loading: 'lazy',
+              sizes: sizes,
+              widths: widths,
+              fetchpriority: fetch_priority
+          }}
+      {%- endif -%}   
+    </div>
+   {%- endif -%}
+  
+{% if section.settings.layout == "video" %}
+
+<hero-banner-video video-src="{{ section.settings.video }}"></hero-banner-video>
+
+<script src="{{ 'video-auto-play.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+  
+  <div class="card-hero hero_{{ section.settings.text-align }}_align" style="color:{{ section.settings.text_color }}; background-color:{{ section.settings.background_section }};">
+
+    {%- if section.settings.review_show != blank -%}
+<div class="reviewstar">
+ <span class="hero_review star_{{ section.settings.reviewstar }}">
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="13" viewBox="0 0 84 13" fill="none">
+  <path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#010101"></path>
+  <path d="M24.0215 0L25.4808 4.49139H30.2034L26.3827 7.26722L27.8421 11.7586L24.0215 8.98278L20.2009 11.7586L21.6602 7.26722L17.8396 4.49139H22.5621L24.0215 0Z" fill="#010101"></path>
+  <path d="M41.543 0L43.0023 4.49139H47.7248L43.9042 7.26722L45.3636 11.7586L41.543 8.98278L37.7224 11.7586L39.1817 7.26722L35.3611 4.49139H40.0836L41.543 0Z" fill="#010101"></path>
+  <path d="M59.0645 0L60.5238 4.49139H65.2463L61.4257 7.26722L62.8851 11.7586L59.0645 8.98278L55.2438 11.7586L56.7032 7.26722L52.8826 4.49139H57.6051L59.0645 0Z" fill="#010101"></path>
+  <path d="M76.5879 0L78.0472 4.49139H82.7698L78.9492 7.26722L80.4085 11.7586L76.5879 8.98278L72.7673 11.7586L74.2266 7.26722L70.406 4.49139H75.1285L76.5879 0Z" fill="#010101"></path>
+  </svg></span> {{ section.settings.review_text }}
+</div>
+      {%- endif -%}
+    
+
+      <div class="herotext_slider">
+        {%- if section.settings.slide_text_1 != blank -%}<div><h3 class="h1">{{ section.settings.slide_text_1 }}</h3></div>{%- endif -%}
+        {%- if section.settings.slide_text_2 != blank -%}<div><h3 class="h1">{{ section.settings.slide_text_2 }}</h3></div>{%- endif -%}  
+        {%- if section.settings.slide_text_3 != blank -%}<div><h3 class="h1">{{ section.settings.slide_text_3 }}</h3></div>{%- endif -%}
+        {%- if section.settings.slide_text_4 != blank -%}<div><h3 class="h1">{{ section.settings.slide_text_4 }}</h3></div>{%- endif -%}
+        {%- if section.settings.slide_text_5 != blank -%}<div><h3 class="h1">{{ section.settings.slide_text_5 }}</h3></div>{%- endif -%}
+      </div>
+
+    
+    {%- if section.settings.title_hero != blank -%}
+    <h1>{{ section.settings.title_hero }}</h1>
+       {%- endif -%}
+    {%- if section.settings.content != blank -%}
+    <p>{{ section.settings.content }}</p>
+     {%- endif -%}
+     
+    {%- if section.settings.text_button_hero != blank -%}
+    <a href="{{ section.settings.link_hero }}" class="hero_btn">{{ section.settings.text_button_hero }}</a>
+     {%- endif -%}
+     {%- if section.settings.text_button_hero_2 != blank -%}
+      <a href="{{ section.settings.link_hero_2 }}" class="hero_btn">{{ section.settings.text_button_hero_2 }}</a>
+       {%- endif -%}
+       {{ section.settings.paragraph }}
+       
+  </div>
+</section>
+
+<script src="{{ 'new-section-hero.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "New Hero Home",
+  "class": "section-hero-home",
+  "settings": [
+    {
+      "type": "radio",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image",
+          "label": "Image"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image",
+      "label": "Select option"
+    },
+    {
+      "type": "header",
+      "content": "IMAGE"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image hero",
+      "info" : "Size: 2000 x 1020px"
+    },
+    {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile hero image",
+          "info" : "Size: 700 x 626px"
+        },
+     {
+      "type": "header",
+      "content": "VIDEO"
+    },
+       {
+          "type": "textarea",
+          "id": "video",
+          "label": "Video url .mp4",
+          "info" : "Size: 5-10mb"
+        },
+        
+      {
+      "type": "header",
+      "content": "CAPTION"
+    },
+    
+    {
+      "type": "color",
+      "id": "color_fondo",
+      "label": "Color Overlay",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "background_section",
+      "label": "Background Section",
+      "default": "#f9f9ee"
+    },
+     {
+      "id": "review_show",
+      "type": "checkbox",
+      "label": "Show Review",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "reviewstar",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "default": "5",
+      "label": "Star review"
+    },
+    {
+      "id": "review_text",
+      "type": "text",
+      "label": "Review text",
+      "default": "2,000 5-star reviews"
+    },
+     {
+      "id": "slide_text_1",
+      "type": "text",
+      "label": "Slide text first",
+      "default": "Gut Health"
+    },
+    {
+      "id": "slide_text_2",
+      "type": "text",
+      "label": "Slide text second",
+      "default": "Energy"
+    },
+    {
+      "id": "slide_text_3",
+      "type": "text",
+      "label": "Slide text third",
+      "default": "Focus"
+    },
+    {
+      "id": "slide_text_4",
+      "type": "text",
+      "label": "Slide text fourth",
+      "default": "Relaxation"
+    },
+    
+    {
+      "id": "title_hero",
+      "type": "text",
+      "label": "Title Hero",
+      "info": "Title section",
+      "default": "Spark your Gut Balance From Within"
+    },
+    {
+      "id": "content",
+      "type": "textarea",
+      "label": "Content Hero",
+      "info": "Content section",
+      "default": "Suu’s Japanese-style apple cider vinegar liquid prebiotic meal companions blend ancient wisdom with modern science to promote gut balance from its very core."
+    },
+    
+    {
+      "type": "url",
+      "id": "link_hero",
+      "label": "Url button"
+    },
+    {
+      "id": "text_button_hero",
+      "type": "text",
+      "label": "Text button Hero",
+      "info": "Text button section",
+      "default": "Start My Journey"
+    },
+    {
+      "type": "url",
+      "id": "link_hero_2",
+      "label": "Url button Secondary"
+    },
+    {
+      "id": "text_button_hero_2",
+      "type": "text",
+      "label": "Text button Hero Secondary",
+      "info": "Text button section",
+      "default": "Start My Journey"
+    },
+    {
+      "id": "text_button_hero_color",
+      "type": "color",
+      "label": "Text button Hero Color",
+      "info": "Color Button"
+    },
+    {
+      "id": "background_primary",
+      "type": "color",
+      "label": "background button",
+      "info": "Background Color Button Hover"
+    },
+    {
+      "id": "text_button_hero_color_hover",
+      "type": "color",
+      "label": "Text button Hero Color Hover",
+      "info": "Color Button Hover"
+    },
+    {
+      "id": "background_hover",
+      "type": "color",
+      "label": "background button Hover",
+      "info": "Background Color Button Hover"
+    },
+    {
+      "id": "boder",
+      "type": "color",
+      "label": "Border Color Hover ",
+      "info": "Border Color Button Hover"
+    },
+    {
+      "id": "text_button_secondary",
+      "type": "color",
+      "label": "Color Button Secondary",
+      "info": "Color Button"
+    },
+    {
+      "id": "text_button_secondary_bg",
+      "type": "color",
+      "label": "Background Button Secondary",
+      "info": "Background Color Button"
+    },
+    {
+      "id": "text_button_hero_color_hover_secondary",
+      "type": "color",
+      "label": "Text button Hero Color Hover Secondary",
+      "info": "Color Button Hover"
+    },
+    {
+      "id": "background_hover_secondary",
+      "type": "color",
+      "label": "background Button Hover Secondary ",
+      "info": "Background Color Button Hover"
+    },
+    {
+      "id": "boder_secondary",
+      "type": "color",
+      "label": "Border Color Hover Secondary ",
+      "info": "Border Color Button Hover"
+    },
+    {
+      "type": "radio",
+      "id": "text-align",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+         {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Text alignment"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Footer Text"
+    },
+    {
+      "type": "header",
+      "content": "COLOR"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Hero Home"
+    }
+  ]
+}
+{% endschema %}
