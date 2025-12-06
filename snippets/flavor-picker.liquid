@@ -1,0 +1,60 @@
+<style>
+    #keen-flavor-picker{
+        background:#F2D321;
+        padding:0 1.3em 0;
+        margin-top:0;
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+    }
+    #keen-flavor-picker .flavor-picker-heading{
+        max-width: 80%;
+        text-align: center;
+    }
+    #keen-flavor-picker .flavor-picker-row{
+        display:flex;
+        flex-direction:row;
+        gap:5px;
+        margin-top:0.4em;
+    }
+    #keen-flavor-picker .flavor-picker-product{
+        flex:1 1 calc(16.67% - 5px);
+        border-radius:5px;
+        overflow:hidden;
+        display:inline-flex;
+        flex-direction:column;
+        border:2px solid transparent;
+    }
+    #keen-flavor-picker .flavor-picker-product.active-product{
+        border:2px solid #000;
+    }
+    #keen-flavor-picker .flavor-picker-product img{
+        max-width:100%;
+    }
+</style>
+<div id="keen-flavor-picker">
+    <div class="flavor-picker-heading">
+        <strong>Select Flavor:</strong> <span>{{ product.title }}</span>
+    </div>
+    <div class="flavor-picker-row">
+        {% assign all_collection =  product.collections[0].handle %}
+        {% assign current_collection = collections[all_collection] %}
+        {% for p in current_collection.products %}
+            {% assign p_title = p.title %}
+            {% assign p_thumb = p.featured_image | image_url: width:100  %}
+            {% assign p_price = p.price %}
+            {% assign p_handle = p.handle %}
+            {% assign p_id = p.id %}
+            <div 
+                class="flavor-picker-product {% if p_id == product.id %}active-product{% endif %}"
+                data-product-id="{{ p_id }}"
+                data-product-handle="{{ p_handle }}"
+                data-product-price="{{ p_price }}"
+                data-product-title="{{ p_title }}"
+            >
+                <img src="{{ p_thumb }}" alt="{{ p_title }}" loading="lazy">
+            </div>
+        {% endfor %}
+    </div>
+</div>

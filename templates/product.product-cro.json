@@ -1,0 +1,262 @@
+{
+  "sections": {
+    "main_product_cro_enajbC": {
+      "type": "main-product-cro",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_info": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": "",
+            "enable_read_more": false,
+            "show_excerpt": false
+          }
+        },
+        "flavor_picker_8NFdei": {
+          "type": "flavor_picker",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_type": "color",
+            "variant_image_size": "portrait"
+          }
+        },
+        "complementary": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "heading": "Add-Ons",
+            "products_limit": 2,
+            "image_fit": "cover",
+            "show_vendor": false
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "description",
+        "flavor_picker_8NFdei",
+        "variant_picker",
+        "complementary",
+        "inventory",
+        "buy_buttons"
+      ],
+      "name": "Main Product CRO",
+      "settings": {
+        "color_scheme": "background-2",
+        "desktop_alignment": "left",
+        "mobile_alignment": "before",
+        "aspect_ratio": "square",
+        "image_fit": "cover",
+        "thumbs_image_fit": "cover",
+        "enable_video_looping": false,
+        "media_color_scheme": "background-2",
+        "padding_bottom": "xl"
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_info": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": "",
+            "enable_read_more": false,
+            "show_excerpt": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_type": "color",
+            "variant_image_size": "portrait"
+          }
+        },
+        "complementary": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "heading": "Add-Ons",
+            "products_limit": 2,
+            "image_fit": "cover",
+            "show_vendor": false
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "description",
+        "variant_picker",
+        "complementary",
+        "inventory",
+        "buy_buttons"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "desktop_alignment": "left",
+        "mobile_alignment": "before",
+        "aspect_ratio": "square",
+        "image_fit": "cover",
+        "thumbs_image_fit": "cover",
+        "enable_video_looping": false,
+        "media_color_scheme": "background-1",
+        "padding_bottom": "xl"
+      }
+    },
+    "collapsible_content_QQ6Xqb": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_nWbwig": {
+          "type": "accordion",
+          "settings": {
+            "question": "NUTRITION FACTS",
+            "answer": "",
+            "opened": false
+          }
+        },
+        "accordion_pLKkiD": {
+          "type": "accordion",
+          "settings": {
+            "question": "SHIPPING",
+            "answer": "<p>Some desAll products are made in small batches in Los Angeles, CA and shipped every two weeks. We strive to get your order out quickly, but please allow us some time to get you the best quality snack possible! cription<\/p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_nWbwig",
+        "accordion_pLKkiD"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "text_align": "center",
+        "row_color_scheme": "background-2",
+        "padding_top": "no-indent",
+        "padding_bottom": "l"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "heading": "You may also like",
+        "heading_size": "h3",
+        "description": "",
+        "products_limit": 4,
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "mobile_slider_layout_type": "with_arrows",
+        "button_show": true,
+        "button_label": "SHOP ALL",
+        "button_style": "primary",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_arrow": false,
+        "padding_top": "no-indent",
+        "padding_bottom": "xl"
+      }
+    },
+    "opinew-reviews-product-page-code": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_dg3L9t": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_dg3L9t"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main_product_cro_enajbC",
+    "main-product",
+    "collapsible_content_QQ6Xqb",
+    "product-recommendations",
+    "opinew-reviews-product-page-code"
+  ]
+}

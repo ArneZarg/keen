@@ -1,0 +1,34 @@
+<style>
+    #dropdown-qty{
+        width:100%;
+        position:relative;
+        background:transparent;
+    }
+    #dropdown-qty select{
+        width:100%;
+        background:transparent;;
+        border:none;
+        border-bottom:2px solid #000;
+        padding-bottom:0.3em;
+        position:relative;
+        z-index:1
+    }
+    #dropdown-qty .arrow{
+        position:absolute;
+        right:0;
+        width:22px;
+        top:50%;
+        transform:translateY(-50%);
+        z-index:0;
+    }
+</style>
+<div id="dropdown-qty">
+    <div class="arrow">
+        {% render "bottom-arrow" %}
+    </div>
+    <select name="qty-selection">
+        <option value="1">1 Bag /{{ product.price | times:1 | money}}</option>
+        <option value="2">2 Bags /{{ product.price | times:2 | money}}</option>
+        <option value="3">3 Bags /{{ product.price | times:3 | money }}</option>
+    </select>
+</div>
