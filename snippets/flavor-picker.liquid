@@ -25,6 +25,7 @@
         display:inline-flex;
         flex-direction:column;
         border:2px solid transparent;
+        cursor:pointer;
     }
     #keen-flavor-picker .flavor-picker-product.active-product{
         border:2px solid #000;
@@ -35,7 +36,7 @@
 </style>
 <div id="keen-flavor-picker">
     <div class="flavor-picker-heading">
-        <strong>Select Flavor:</strong> <span>{{ product.title }}</span>
+        <strong>Select Flavor:</strong> <span class="flavor-title">{{ product.title }}</span>
     </div>
     <div class="flavor-picker-row">
         {% assign all_collection =  product.collections[0].handle %}
@@ -45,6 +46,7 @@
             {% assign p_thumb = p.featured_image | image_url: width:100  %}
             {% assign p_price = p.price %}
             {% assign p_handle = p.handle %}
+            {% assign variant_id = p.selected_or_first_available_variant %}
             {% assign p_id = p.id %}
             <div 
                 class="flavor-picker-product {% if p_id == product.id %}active-product{% endif %}"
@@ -52,9 +54,66 @@
                 data-product-handle="{{ p_handle }}"
                 data-product-price="{{ p_price }}"
                 data-product-title="{{ p_title }}"
+                data-product-variant-id="{{ variant_id.id }}"
             >
                 <img src="{{ p_thumb }}" alt="{{ p_title }}" loading="lazy">
             </div>
         {% endfor %}
     </div>
 </div>
+<script>
+    const flavor_ref = {};
+    {% for p in current_collection.products %}
+        {% assign p_id = p.id %}
+        flavor_ref[`{{ p_id }}`] = {}
+        flavor_ref[`{{ p_id }}`].description = `{{ p.description }}`;
+    {% endfor %}
+    
+    //DOM elements
+    const flavorPicker = document.querySelector("#keen-flavor-picker");
+    const flavors = flavorPicker.querySelectorAll('.flavor-picker-product');
+    const flavorTitle = flavorPicker.querySelectorAll('.flavor-title');
+
+    //event listeners
+    flavors.forEach(f => {
+        f.addEventListener('click',switchFlavor)
+    });
+
+    //functions
+    function switchFlavor(){
+        //variables
+        const f = this;
+        const id = f.getAttribute('data-product-id');
+        const handle = f.getAttribute('data-product-handle');
+        const title = f.getAttribute('data-product-title');
+        const domTitle = document.querySelectorAll('h1.product__title');
+        const domDesc = document.querySelectorAll('.product__description');
+        
+        //handle dom changes
+        flavorTitle.forEach(ft => {
+            ft.innerText = title;
+        })
+        domTitle.forEach(t => {
+            t.innerText = title;
+        });
+        domDesc.forEach(d => {
+            d.innerHTML = flavor_ref[id]['description'];
+        });
+
+        //handle active class
+        flavors.forEach(flav => {
+            flav.classList.remove('active-product');
+        });
+        f.classList.add('active-product');
+        handleFormChange(f);
+    }
+    function handleFormChange(f){
+        const atc_form = document.querySelector('form[data-type="add-to-cart-form"]');
+        const input_pid = atc_form.querySelector('input[name="product-id"]');
+        const input_vid = atc_form.querySelector('input[name="id"]');
+        const productId = f.getAttribute('data-product-id');
+        const variantId = f.getAttribute('data-product-variant-id');
+        input_pid.value = productId;
+        input_vid.value = variantId;
+    }
+</script>
