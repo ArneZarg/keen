@@ -89,6 +89,10 @@
     border:none !important;
     margin-top:10px;
   }
+  #CROProduct-{{section.id }} .low-carb{
+    font-size:13px;
+    text-align:center;
+  }
 </style>
 <section
   id="CROProduct-{{ section.id }}"
@@ -1039,6 +1043,7 @@
                           {{ form | payment_button }}
                         </div>
                       {%- endif -%}
+                      <div class="low-carb">Low Carb • Keeps You Full • Nut Free</div>
                     </div>
                   {%- endform -%}
                 </product-form>
