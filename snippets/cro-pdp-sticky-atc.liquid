@@ -1,0 +1,55 @@
+<style>
+    #cro-pdp-sticky-atc{
+        position:fixed;
+        bottom:0;
+        z-index:9;
+        padding: 1em 2.4em;
+        width: 100%;
+    }
+    #cro-pdp-sticky-atc .sticky-atc{
+        background:#E2362E;
+        width:100%;
+        color:#fff;
+        font-weight:bold;
+        font-size:calc(1.6 * 1rem);
+        padding:14px;
+        border-radius:50px;
+    }
+    @media(min-width:990px){
+        #cro-pdp-sticky-atc{
+            display:none;
+        }
+    }
+</style>
+<div id="cro-pdp-sticky-atc">
+    <button class="sticky-atc">Add to Cart</button>
+</div>
+<script>
+    function hideWhenInView(targetSelector, elementToHideSelector, options = {}) {
+        const target = targetSelector;
+        const elementToHide = elementToHideSelector;
+
+        if (!target || !elementToHide) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    elementToHide.style.display = "none";     // Hide
+                } else {
+                    elementToHide.style.display = "";         // Show (revert)
+                }
+            });
+        }, options);
+
+        observer.observe(target);
+    }
+
+    document.addEventListener('DOMContentLoaded',function(){
+        const sticky_btn = document.querySelector('#cro-pdp-sticky-atc .sticky-atc');
+        const form_btn = document.querySelector('product-form .product-form__submit');
+        sticky_btn.addEventListener('click',function(){
+            form_btn.click();
+        });
+        hideWhenInView(form_btn,sticky_btn,{});
+    })
+</script>
