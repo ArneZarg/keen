@@ -4,6 +4,7 @@
         margin:0 auto;
         padding:6.4rem 2rem 0rem;
         background:#F2D321;
+        overflow:hidden;
     }
     #cro-move-{{ section.id }} .hero-m-content{
         display:flex;
@@ -44,23 +45,65 @@
             width:100%;
         }
     }
+    @media(min-width:1024px){
+        #cro-move-{{ section.id }}{
+            padding:0 2rem;
+        }
+        #cro-move-{{ section.id }} .btn-container{
+            width:66%;
+        }
+        #cro-move-{{ section.id }} .hero-m-content{
+            flex-basis:50%;
+            align-items:flex-start;
+        }
+        #cro-move-{{ section.id }} .hero-title h2{
+            text-align:left;
+            font-size:39px;
+        }
+        #cro-move-{{ section.id }} .desktop-gutter{
+            display:flex;
+            flex-direction:row;
+            max-width:1440px;
+            width:100%;
+            padding-left:8rem;
+            padding-right:8rem;
+            margin-left:auto;
+            margin-right:auto;
+            align-items:center;
+        }
+        #cro-move-{{ section.id }} .hero-container{
+            margin-top:0;
+            right:-50%;
+            left:unset;
+            margin-left:0;
+            margin-right:-8rem;
+            transform:translateX(-50%);
+            width:50vw;
+        }
+        
+    }
 </style>
 <div id="cro-move-{{ section.id }}">
-    <div class="hero-m-content">
-        <div class="hero-title">
-            <h2>{{ section.settings.title }}</h2>
+    <div class="desktop-gutter">
+        <div class="hero-m-content">
+            <div class="hero-title">
+                <h2>{{ section.settings.title }}</h2>
+            </div>
+            <div class="hero-text">
+                {{ section.settings.hero_text }}
+            </div>
+            <div class="btn-container">
+                <a class="btn btn-move-top" title="buy-now" href="#flavors">
+                    Buy Now
+                </a>
+            </div>
         </div>
-        <div class="hero-text">
-            {{ section.settings.hero_text }}
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width:1024px)" srcset="{{ 'desk-hero.jpg' | file_url }}">
+                <img src="{{ section.settings.hero_img_mobile | image_url }}">
+            </picture>
         </div>
-        <div class="btn-container">
-            <a class="btn btn-move-top" title="buy-now" href="#flavors">
-                Buy Now
-            </a>
-        </div>
-    </div>
-    <div class="hero-container">
-        <img src="{{ section.settings.hero_img_mobile | image_url }}">
     </div>
 </div>
 {% schema %}
