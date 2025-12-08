@@ -5,7 +5,7 @@
         padding:6.4rem 2rem 0rem;
         background:#F2D321;
     }
-    #cro-move-{{ section.id }} .hero-content{
+    #cro-move-{{ section.id }} .hero-m-content{
         display:flex;
         flex-direction:column;
         width:100%;
@@ -34,10 +34,19 @@
     }
     #cro-move-{{ section.id }} .hero-container{
         margin-top:40px;
+        position:relative;
+        width:100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        img{
+            width:100%;
+        }
     }
 </style>
 <div id="cro-move-{{ section.id }}">
-    <div class="hero-content">
+    <div class="hero-m-content">
         <div class="hero-title">
             <h2>{{ section.settings.title }}</h2>
         </div>
@@ -45,7 +54,7 @@
             {{ section.settings.hero_text }}
         </div>
         <div class="btn-container">
-            <a class="btn btn-move-top" title="buy-now" href="#atc-scroll-id">
+            <a class="btn btn-move-top" title="buy-now" href="#flavors">
                 Buy Now
             </a>
         </div>
