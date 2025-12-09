@@ -43,6 +43,11 @@
     width:5.4rem !important;
     height:5.4rem !important;
   }
+  #CROProduct-{{section.id }} .product__media{
+    padding-bottom:585px;
+    max-height:585px;
+  }
+  
   #CROProduct-{{ section.id }} .product__media-sublist{
     max-width:24rem;
   }
@@ -89,10 +94,46 @@
   }
   #CROProduct-{{ section.id }} .product__media-item{
     border:1px solid #000;
+    max-height:270px;
+  }
+  #CROProduct-{{section.id }} .product__title__wrapper{
+    margin-top:10px;
+  }
+  #CROProduct-{{section.id }} .product__title.h2{
+    font-size:30px;
+  }
+  #CROProduct-{{section.id }} .product__media-list .product__media img{
+    margin:0 auto;
+    max-height:270px;
+    width:auto !important;
   }
   @media(min-width:990px){
+    #CROProduct-{{section.id }} .product__media-list .product__media img{
+      margin:0 auto;
+      max-height:585px;
+      width:auto !important;
+    }
+    #CROProduct-{{section.id }} .container{
+      max-width:1840px !important;
+    }
+    #CROProduct-{{section.id }} .product__media-wrapper{
+      max-height:585px;
+    }
+    #CROProduct-{{section.id }} .highlight-img{
+      margin-top:15px;
+    }
+    #CROProduct-{{section.id }} .price-item--regular{
+      font-size:20px;
+    }
+    #CROProduct-{{section.id }} .product__title__wrapper{
+      margin-top:1rem !important;
+    }
+    #CROProduct-{{section.id }} .product__title.h2{
+      font-size: 40px !important;
+    }
     #CROProduct-{{ section.id }} .product__media-item{
       border:1px solid #cccccc;
+      max-height:585px;
     }
     #CROProduct-{{section.id }} .product__description-wrapper{
       order:3;
@@ -109,6 +150,7 @@
     }
     #CROProduct-{{section.id }} .product__buy-buttons{
       border-radius:0;
+      padding-top:0px;
     }
   }
 </style>
@@ -410,7 +452,7 @@
             <div class="product__media-list-wrapper">
               <div class="product__media-list">
                 <div class="product__media-item">
-                  <div class="product__media media" style="padding-bottom: {{ padding_bottom }}%">
+                  <div class="product__media media" style="padding-bottom: {{ padding_bottom }}%; max-height:100%;">
                     {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   </div>
                 </div>
@@ -452,6 +494,7 @@
                   display:flex;
                   gap:7px;
                   align-items:center;
+                  margin-top:0 !important;
                 }
               </style>
               <div class="review-picker">{% render 'review-stars' %} {{ block.settings.text }}</div>

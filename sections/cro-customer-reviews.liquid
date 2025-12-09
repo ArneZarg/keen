@@ -109,7 +109,7 @@
             <div class="height-grow swiper-slide">
                 <div class="card-container">
                     <div class="card-pic">
-                        <img src="https://cdn.shopify.com/s/files/1/0641/9169/2992/files/review-customer.png?v=1765040330">
+                        <img src="https://cdn.shopify.com/s/files/1/0641/9169/2992/files/review-card-2.png?v=1765319831">
                     </div>
                     <div class="review-stars">
                         {% render 'review-stars' %}
@@ -130,7 +130,7 @@
             <div class="height-grow swiper-slide">
                 <div class="card-container">
                     <div class="card-pic">
-                        <img src="https://cdn.shopify.com/s/files/1/0641/9169/2992/files/review-customer.png?v=1765040330">
+                        <img src="https://cdn.shopify.com/s/files/1/0641/9169/2992/files/review-card-3.png?v=1765319927">
                     </div>
                     <div class="review-stars">
                         {% render 'review-stars' %}
@@ -157,6 +157,9 @@
         const mobileCards = new Swiper('#cust-reviews-{{ section.id }} .swiper',{
             loop:true,
             spaceBetween:15,
+            autoplay:{
+                delay:3000
+            },
             pagination:{
                 el:".swiper-pagination",
                 clickable:true
