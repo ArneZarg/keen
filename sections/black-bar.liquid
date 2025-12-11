@@ -46,11 +46,15 @@
         height:35px;
         gap:10px;
     }
-    .black-bar-desk-pad{
+    
+    @media(min-width:990px){
+        .black-bar-desk-pad{
         padding-top:37px;
         padding-bottom:37px;
+        position: relative;
+    top: -37px;
+    z-index: 99;
     }
-    @media(min-width:990px){
         #black-bar{
             max-width:unset;
             padding-left:19rem;

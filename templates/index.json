@@ -37,6 +37,51 @@
         "text_color": "#000000"
       }
     },
+    "black_bar_8htyiH": {
+      "type": "black-bar",
+      "name": "Black Bar",
+      "settings": {}
+    },
+    "popular_products_cro_rVQx8H": {
+      "type": "popular-products-cro",
+      "name": "Popular Products CRO",
+      "settings": {
+        "color_scheme": "",
+        "animate_on_scroll": true,
+        "subheading": "",
+        "heading": "SHOP ALL FLAVORS",
+        "heading_size": "h3",
+        "description": "Experience a flavor blast with DAAL, the ultimate crispy mung bean snack. Indian-American spice blends you’ll love",
+        "product_list": [
+          "daal-variety-pack-copy-1",
+          "tandoori-ranch",
+          "sweet-chili-masala",
+          "buffalo-chutney"
+        ],
+        "color_title": "",
+        "color_description": "",
+        "cards_layout": "grid",
+        "mobile_cards_layout": "column",
+        "mobile_slider_layout_type": "visible_overflow",
+        "products_to_show": 4,
+        "column_gap": "1.6",
+        "row_gap": "4",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "button_show": false,
+        "button_label": "Button label",
+        "button_style": "primary",
+        "button_link": "",
+        "button_arrow": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "xl",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
     "media_banner_Yj9BDA": {
       "type": "media-banner",
       "disabled": true,
@@ -781,16 +826,12 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "black_bar_8htyiH": {
-      "type": "black-bar",
-      "name": "Black Bar",
-      "settings": {}
     }
   },
   "order": [
     "cro_hero_section_9TPhnz",
     "black_bar_8htyiH",
+    "popular_products_cro_rVQx8H",
     "media_banner_Yj9BDA",
     "popular_products",
     "popular_products_wTp8Da",
