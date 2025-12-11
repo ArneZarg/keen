@@ -1,0 +1,109 @@
+<style>
+    #black-bar{
+        width:100%;
+        max-width:1880px;
+        padding-left:2rem;
+        padding-right:2rem;
+        margin:0 auto;
+        background:#000;
+        position:relative;
+    }
+    #black-bar .row-black{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:37px;
+        padding-bottom:37px;
+    }
+    #black-bar .black-bar-text{
+        color:#fff;
+        color: #FFF;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px; /* 153.333% */
+        width:65%;
+        gap:10px;
+        display:flex;
+        flex-direction:column;
+    }
+    #black-bar .snack-img{
+        width:27%;
+        img{
+            width:100%;
+        }
+    }
+    #black-bar .black-bar-text a{
+        display:flex;
+        background:#F9D200;
+        align-items:center;
+        font-weight:bold;
+        font-size:15px;
+        border-radius:55px;
+        width:143px;
+        justify-content:center;
+        height:35px;
+        gap:10px;
+    }
+    .black-bar-desk-pad{
+        padding-top:37px;
+        padding-bottom:37px;
+    }
+    @media(min-width:990px){
+        #black-bar{
+            max-width:unset;
+            padding-left:19rem;
+            padding-right:8rem;
+            width:100vw;
+            left:-50vw;
+            transform:translateX(50vw);
+        }
+        #black-bar .row-black{
+            max-width: 1880px;
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+        #black-bar .snack-img {
+            width: 140px;
+            position: absolute;
+        }
+        #black-bar .black-bar-text{
+            margin-left:200px;
+            flex-direction:row;
+            align-items:center;
+            font-size:19px;
+            gap:50px;
+        }
+        #black-bar .black-bar-text a{
+            font-size:16px;
+        }
+    }
+</style>
+<div class="black-bar-desk-pad">
+    <div id="black-bar">
+        <div class="row-black">
+            <div class="snack-img">
+                <img src="https://cdn.shopify.com/s/files/1/0641/9169/2992/files/bag-big.png?v=1765419495" alt="bag">
+            </div>
+            <div class="black-bar-text">
+                <div>
+                    Try the DAAL Variety Pack! Our 3 boldest flavors in one bag.
+                </div>
+                <div>
+                    <a href="">Shop Pack {% render 'right-arrow' %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Black Bar",
+    "presets": [
+        {
+            "name": "Black Bar"
+        }
+    ]
+}
+{% endschema %}
