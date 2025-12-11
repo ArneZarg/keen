@@ -14,7 +14,41 @@
   {% render 'section-padding' %}
   {% render 'section-margin' %}
 {% endstyle %}
-
+<style>
+  .section-{{ section.id }} a.button.button--primary.slideshow__button{
+    width: 270px;
+    padding:16px 0;
+    span{
+      color: #FFF;
+      text-align: center;
+      font-family: Inter;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  @media(min-width:990px){
+    .section-{{ section.id }} .slideshow__title-content.h2 span{
+      text-align:left;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 80% */
+      text-transform: uppercase;
+    }
+    .section-{{ section.id }} .slideshow__title-content+.slideshow__description-content{
+      max-width:unset;
+    }
+    .section-{{ section.id }} .slideshow__description-content p{
+      text-align:left;
+    }
+    .section-{{ section.id }} .slideshow__content-wrapper--center .slideshow__content-group{
+      text-align:left;
+      align-items:start;
+    }
+  }
+</style>
 {%- for block in section.blocks -%}
   {% liquid
     if section.settings.image_ratio_mobile != 'adapt' and section.settings.image_ratio_mobile != 'full_height'

@@ -82,6 +82,129 @@
         "margin_bottom": "no-indent"
       }
     },
+    "popular_products_cro_AXcdjC": {
+      "type": "popular-products-cro",
+      "name": "Popular Products CRO",
+      "settings": {
+        "color_scheme": "",
+        "animate_on_scroll": true,
+        "subheading": "",
+        "heading": "TURN UP THE HEAT 🔥",
+        "heading_size": "h3",
+        "description": "NEW: Wild Habanero and Savage Ghost Pepper. Same crispy, crunchy mung beans. Now with a fiery kick.",
+        "product_list": [
+          "wild-habanero",
+          "savage-ghost-pepper"
+        ],
+        "color_title": "",
+        "color_description": "",
+        "cards_layout": "bar",
+        "mobile_cards_layout": "slider",
+        "mobile_slider_layout_type": "visible_overflow",
+        "products_to_show": 4,
+        "column_gap": "1.6",
+        "row_gap": "4",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_desc": false,
+        "button_show": false,
+        "button_label": "Button label",
+        "button_style": "primary",
+        "button_link": "",
+        "button_arrow": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "xl",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multi_column_cards_hRkfMn": {
+      "type": "multi-column-cards",
+      "blocks": {
+        "card_jb3z3P": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/low-carb_9.24_1.png",
+            "title": "Real Ingredients Only",
+            "description": "We use whole mung beans, spices, and clean oils — no powders, no fillers, no mystery ingredients."
+          }
+        },
+        "card_LFhJEC": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/low-carb_9.24_1.png",
+            "title": "High Protein, No Junk",
+            "description": "5g plant protein per serving, zero fried greasiness, and nothing you can’t pronounce."
+          }
+        },
+        "card_yRBmLY": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/low-carb_9.24_1.png",
+            "title": "Crunch That Actually Satisfies",
+            "description": "A crave-worthy texture that crushes other “healthy snacks” in flavor AND crunch."
+          }
+        },
+        "card_iggKXQ": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/low-carb_9.24_1.png",
+            "title": "Better for Every Day Snacking",
+            "description": "Light on the stomach, bold on taste. The kind of snack you can eat daily without the guilt."
+          }
+        }
+      },
+      "block_order": [
+        "card_jb3z3P",
+        "card_LFhJEC",
+        "card_yRBmLY",
+        "card_iggKXQ"
+      ],
+      "name": "Multicolumn Cards",
+      "settings": {
+        "title": "WHY DAAL IS LOVED"
+      }
+    },
+    "homepage_review_section_pRgBmz": {
+      "type": "homepage-review-section",
+      "blocks": {
+        "card_nfWWqc": {
+          "type": "card",
+          "settings": {
+            "review_name": "Brittany",
+            "review": "\"These are just so good. The Tandoori Ranch one was my absolute favorite, I want to be able to buy a shaker of the seasonings.\"",
+            "img": "shopify:\/\/shop_images\/review-customer.png"
+          }
+        },
+        "card_HVipYt": {
+          "type": "card",
+          "settings": {
+            "review_name": "Shrinivasan",
+            "review": "“Amazing taste right amount of spice can’t get them fast enough\"",
+            "img": "shopify:\/\/shop_images\/review-card-2.png"
+          }
+        },
+        "card_tpEqbi": {
+          "type": "card",
+          "settings": {
+            "review_name": "Paui",
+            "review": "“All three are SO deliscious! Each spice blend is unique and the crunch is addicting. My personal favorite is Sweet Chili Masala\"",
+            "img": "shopify:\/\/shop_images\/review-card-3.png"
+          }
+        }
+      },
+      "block_order": [
+        "card_nfWWqc",
+        "card_HVipYt",
+        "card_tpEqbi"
+      ],
+      "name": "Review Homepage CRO",
+      "settings": {
+        "title": "See Why Snackers Are Obsessed"
+      }
+    },
     "media_banner_Yj9BDA": {
       "type": "media-banner",
       "disabled": true,
@@ -117,6 +240,7 @@
     },
     "popular_products": {
       "type": "popular-products",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "color_scheme": "background-1",
@@ -157,6 +281,7 @@
     },
     "popular_products_wTp8Da": {
       "type": "popular-products",
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "animate_on_scroll": true,
@@ -207,9 +332,9 @@
             "heading": "READY TO SNACK SMARTER?",
             "heading_size": "h2",
             "description": "We took real ingredients, bold spices, and a massive love for flavor, and built a snack that hits every craving.",
-            "show_button_1": false,
+            "show_button_1": true,
             "button_style_1": "primary",
-            "button_label_1": "SHOP NOW",
+            "button_label_1": "Shop Flavors",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_arrow_1": false,
             "show_button_2": false,
@@ -427,83 +552,6 @@
         "margin_bottom": "no-indent"
       }
     },
-    "testimonials_nKJLaV": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonials_slide_7H7Bdx": {
-          "type": "testimonials_slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SnapTik-dot-Kim-6966cde9c9f60ca1051fb85465abcb57.00_00_06_31.Still001.png",
-            "rating": 5,
-            "slide_text": "\"Amazing taste right amount of spice can’t get them fast enough\"",
-            "slide_author": "Shrinivasan",
-            "product": "daal-variety-pack",
-            "button_arrow": true
-          }
-        },
-        "testimonials_slide_WeHKXh": {
-          "type": "testimonials_slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/the-healthy-snack-no-subs-or-music.00_01_44_13.Still003.png",
-            "rating": 5,
-            "slide_text": "\"These are just so good. The Tandoori Ranch one was my absolute favorite, I want to be able to buy a shaker of the seasonings.\"",
-            "slide_author": "Brittany",
-            "product": "tandoori-ranch",
-            "button_arrow": true
-          }
-        },
-        "testimonials_slide_atJrwp": {
-          "type": "testimonials_slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/crop-Still002.png",
-            "rating": 5,
-            "slide_text": "\"All three are SO delicious! Each spice blend is unique, and the crunch is addicting. My personal favorite is Sweet Chili Masala\"",
-            "slide_author": "Paui",
-            "product": "sweet-chili-masala",
-            "button_arrow": true
-          }
-        },
-        "testimonials_slide_E6gWxw": {
-          "type": "testimonials_slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2025-10-10_at_2.12.28_PM.png",
-            "rating": 5,
-            "slide_text": "\"Freaking DELISH\"",
-            "slide_author": "Jackie",
-            "product": "buffalo-chutney",
-            "button_arrow": true
-          }
-        }
-      },
-      "block_order": [
-        "testimonials_slide_7H7Bdx",
-        "testimonials_slide_WeHKXh",
-        "testimonials_slide_atJrwp",
-        "testimonials_slide_E6gWxw"
-      ],
-      "custom_css": [
-        ".testimonials .testimonials-slider-slide__text,.testimonials .body-small {font-family: \"Inter\", sans-serif;}"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "layout": "with_image",
-        "mobile_slider_layout_type": "with_arrows",
-        "subheading": "",
-        "heading": "",
-        "heading_size": "h3",
-        "description": "",
-        "text_align": "center",
-        "slider_heading": "Flavor That Speaks for Itself",
-        "slider_text": "",
-        "slide_text_size": "h4",
-        "aspect_ratio": "square",
-        "object_fit": "contain",
-        "padding_top": "m",
-        "padding_bottom": "m",
-        "margin_top": "no-indent",
-        "margin_bottom": "no-indent"
-      }
-    },
     "countdown_VeMyPh": {
       "type": "countdown",
       "disabled": true,
@@ -688,7 +736,7 @@
         "column_gap": "0.8",
         "row_gap": "3.2",
         "swipe_on_desktop": false,
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "mobile_slider_layout_type": "with_arrows",
         "card_heading_size": "h4",
         "card_heading_font": "body",
@@ -832,13 +880,15 @@
     "cro_hero_section_9TPhnz",
     "black_bar_8htyiH",
     "popular_products_cro_rVQx8H",
+    "popular_products_cro_AXcdjC",
+    "multi_column_cards_hRkfMn",
+    "homepage_review_section_pRgBmz",
     "media_banner_Yj9BDA",
     "popular_products",
     "popular_products_wTp8Da",
     "slideshow_zeefg6",
     "content_cards_tVCJyQ",
     "ticker_banner_CwbnxE",
-    "testimonials_nKJLaV",
     "countdown_VeMyPh",
     "featured_item_EW8Jbk",
     "product_card_slider_H34U4y",

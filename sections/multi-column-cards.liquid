@@ -1,0 +1,196 @@
+<style>
+    #mc-cards-{{ section.id }}{
+        background:#fff;
+        padding:70px 0;
+        position:relative;
+    }
+    #mc-cards-{{ section.id }} .cards-row{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:15px;
+        padding:40px 0;
+    }
+    #mc-cards-{{ section.id }} .card{
+        padding:30px;
+        border-radius: 10px;
+        background: #F9D200;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        max-width:100%;
+        width:100%;
+    }
+    #mc-cards-{{ section.id }} .card-img{
+        margin-bottom:25px;
+        img{
+            width:100%;
+        }
+    }
+    #mc-cards-{{ section.id }} .card-title{
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px; /* 95% */
+        text-transform: uppercase;
+        margin-bottom:10px;
+    }
+    #mc-cards-{{ section.id }} .card-description{
+        color: #000;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px; /* 153.333% */
+    }
+    #mc-cards-{{ section.id }} .section-title.h2{
+        color: #000;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 114.286% */
+        text-transform: uppercase;
+        text-align:center;
+    }
+    #mc-cards-{{ section.id }} .mobile-wave{
+        position: absolute;
+        width: 100vw;
+        bottom: -1px;
+        left: -50%;
+        transform: translateX(50%);
+        svg{
+            width:100%;
+        }
+    }
+    #mc-cards-{{ section.id }} .desk-wave-bottom,
+    #mc-cards-{{ section.id }} .desk-wave-top{
+        display:none;
+        svg,img{
+            width:100%;
+        }
+    }
+    @media(min-width:990px){
+        #mc-cards-{{ section.id }} .cards-row{
+            grid-template-columns:repeat(4,1fr);
+        }
+        #mc-cards-{{ section.id }} .mobile-wave{
+            display:none;
+        }
+        #mc-cards-{{ section.id }} .desk-wave-bottom,
+        #mc-cards-{{ section.id }} .desk-wave-top{
+            display:block;
+        }
+        #mc-cards-{{ section.id }} .desk-wave-bottom{
+            position:absolute;
+            bottom:-1px;
+            width:100vw;
+            left:-100vw;
+            transform:translateX(100vw);
+        }
+        #mc-cards-{{ section.id }} .section-title.h2{
+            font-size:50px;
+            line-height:40px; 
+        }
+        #mc-cards-{{ section.id }} .card-title{
+            font-size:27px;
+            line-height:28px;
+        }
+        #mc-cards-{{ section.id }} .card-description{
+            font-size:16px;
+            line-height:23px;
+        }
+        #mc-cards-{{ section.id }} .card-img{
+            width:125px;
+            height:125px;
+        }
+        #mc-cards-{{ section.id }} .card{
+            padding:55px 40px;
+        }
+        #mc-cards-{{ section.id }} .desk-wave-top{
+            position: absolute;
+            top: -1px;
+            width: 100vw;
+            left: -100vw;
+            transform: translateX(100vw);
+        }
+    }
+</style>
+<div id="mc-cards-{{ section.id }}">
+    <div class="desk-wave-top">
+        <svg width="1719" height="40" viewBox="0 0 1719 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1254.48 24.2862C1382.39 31.9249 1617.46 18.1973 1719 10.3787V0H0V26.1544C10.249 28.161 131.5 40 179.5 40C236.501 40 574.734 15.7757 711.914 8.9257C849.093 2.07574 1094.6 14.7377 1254.48 24.2862Z" fill="#F9D200"/>
+        </svg>
+    </div>
+    <div class="container">
+        <h2 class="section-title h2">{{ section.settings.title }}</h2>
+        <div class="cards-row">
+            {% for block in section.blocks %}
+                <div class="card">
+                    <div class="card-img">
+                        {% if block.settings.img != blank %}
+                            <img src="{{ block.settings.img | image_url }}">
+                        {% endif %}
+                        {% comment %} <img src="{{ block.settings.img | image_url }}" alt="{{ block.settings.title }}"> {% endcomment %}
+                    </div>
+                    <div class="card-title h2">
+                        {{ block.settings.title }}
+                    </div>
+                    <div class="card-description">
+                        {{ block.settings.description }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="desk-wave-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1719" height="36" viewBox="0 0 1719 36" fill="none">
+            <path d="M464.518 14.1424C336.61 7.26756 101.544 19.6224 0 26.6592V36H1719V12.461C1708.75 10.6551 1587.5 0 1539.5 0C1482.5 0 1144.27 21.8019 1007.09 27.9669C869.907 34.1318 624.403 22.736 464.518 14.1424Z" fill="#F9D200"/>
+        </svg>
+    </div>
+    <div class="mobile-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" width="380" height="35" viewBox="0 0 380 35" fill="none">
+            <path d="M105.118 6.52872C76.1729 -2.19947 22.9789 13.486 0 22.4197V34.2786H389V4.39404C386.681 2.10132 365.5 0 348.38 0C335.481 0 258.941 16.253 227.898 24.0799C196.855 31.9068 141.299 17.4389 105.118 6.52872Z" fill="#F9D200"/>
+        </svg>
+    </div>
+</div>
+{% schema %}
+{
+    "name":"Multicolumn Cards",
+    "presets":[
+        {
+            "name":"Multicolumn Cards"
+        }
+    ],
+    "settings": [
+        {
+            "type":"text",
+            "id": "title",
+            "label":"Title",
+            "default":"WHY DAAL IS LOVED"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "card",
+            "limit": 4,
+            "name":"Card",
+            "settings":[
+                {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "text",
+                    "label": "description",
+                    "id": "description"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

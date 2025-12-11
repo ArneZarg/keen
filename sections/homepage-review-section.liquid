@@ -1,0 +1,242 @@
+<style>
+    #review-homepage-{{ section.id }}{
+        background: #F9D200;
+        padding:30px 0;
+    }
+    #review-homepage-{{ section.id }} .section-title.h2{
+        color: #000;
+        text-align: center;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 114.286% */
+        text-transform: uppercase;
+    }
+    #review-homepage-{{ section.id }} .card-container{
+        border:1px solid #000;
+        border-radius:15px;
+        padding:20px;
+        display:flex;
+        width:100%;
+        justify-content:flex-start;
+        align-items:center;
+        flex-direction:column;
+        gap:20px;
+        max-width:425px;
+        margin:0 auto;
+        height:100%;
+        background:#fff;
+    }
+    #review-homepage-{{ section.id }} .testimonial-quote{
+        text-align:center;
+        size:16px;
+        line-height:25px;
+    }
+    #review-homepage-{{ section.id }} .testimonial-name{
+        color:#464646;
+        text-align:center;
+    }
+    #review-homepage-{{ section.id }} .verified{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        font-size:10px;
+        color:rgba(0, 0, 0, 0.7);
+        svg{
+            opacity:0.7;
+        }
+    }
+    #review-homepage-{{ section.id }} .swiper-pagination{
+        margin-top:20px;
+    }
+    #review-homepage-{{ section.id }} .swiper-pagination-bullet{
+        background:#fff;
+        width:8px;
+        height:8px;
+        border-radius:20px;
+        border:none;
+    }
+    #review-homepage-{{ section.id }} .padding-container{
+        padding:40px 0;
+    }
+    #review-homepage-{{ section.id }} .swiper-pagination-bullet-active{
+        background:#E2362E;
+    }
+    #review-homepage-{{ section.id }} .swiper-wrapper{
+        display:flex;
+        align-items:stretch;
+    }
+    /* Make each slide flex-grow so it fills height */
+    #review-homepage-{{ section.id }} .swiper-slide {
+        height: auto !important; /* Let flexbox decide */
+        display: flex; 
+    }
+
+    /* Make inner card stretch to full height */
+    #review-homepage-{{ section.id }} .card-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #review-homepage-{{ section.id }} .height-grow{
+        display:inline-flex;
+    }
+    #review-homepage-{{ section.id }} .test-bottom{
+        display:inline-flex;
+        flex-direction:column;
+        gap:20px;
+        margin-top: auto;
+        align-items: center;
+    }
+    #review-homepage-{{ section.id }} .desktop-row{
+        display:none;
+    }
+    @media(min-width:990px){
+        #review-homepage-{{ section.id }} .section-title.h2{
+            color: #000;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 80% */
+            text-transform: uppercase;
+        }
+        #review-homepage-{{ section.id }} .mobile-carousel{
+            display:none;
+        }
+        #review-homepage-{{ section.id }} .desktop-row{
+            display:grid;
+            gap:28px;
+            grid-template-columns:repeat(3,1fr);
+        }
+        #review-homepage-{{ section.id }} .card-container{
+            padding:40px 50px;
+        }
+        #review-homepage-{{ section.id }} .testimonial-name{
+            font-size:15px;
+            line-height:25px;
+        }
+        #review-homepage-{{ section.id }}{
+            padding:95px 0;
+        }
+        #review-homepage-{{ section.id }} .padding-container{
+            padding:60px 0;
+        }
+    }
+</style>
+<div id="review-homepage-{{ section.id }}">
+    <div class="container">
+        <h2 class="section-title h2">{{ section.settings.title }}</h2>
+        <div class="padding-container">
+            <div class="mobile-carousel swiper">
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="height-grow swiper-slide">
+                            <div class="card-container">
+                                <div class="card-pic">
+                                    <img src="{{ block.settings.img | image_url }}">
+                                </div>
+                                <div class="review-stars">
+                                    {% render 'review-stars' %}
+                                </div>
+                                <div class="testimonial-quote">
+                                    {{ block.settings.review }}
+                                </div>
+                                <div class="test-bottom">
+                                    <div class="testimonial-name">
+                                        - {{ block.settings.review_name }}
+                                    </div>
+                                    <div class="verified">
+                                        {% render 'verified-check' %} VERIFIED PURCHASE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="desktop-row">
+                {% for block in section.blocks %}
+                    <div class="card-container">
+                        <div class="card-pic">
+                            <img src="{{ block.settings.img | image_url }}">
+                        </div>
+                        <div class="review-stars">
+                            {% render 'review-stars' %}
+                        </div>
+                        <div class="testimonial-quote">
+                            {{ block.settings.review }}
+                        </div>
+                        <div class="test-bottom">
+                            <div class="testimonial-name">
+                                - {{ block.settings.review_name }}
+                            </div>
+                            <div class="verified">
+                                {% render 'verified-check' %} VERIFIED PURCHASE
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        const mobileCards = new Swiper('#review-homepage-{{ section.id }} .swiper',{
+            loop:true,
+            spaceBetween:15,
+            autoplay:{
+                delay:3000
+            },
+            pagination:{
+                el:".swiper-pagination",
+                clickable:true
+            }
+        })
+    })
+</script>
+{% schema %}
+{
+    "name":"Review Homepage CRO",
+    "presets": [
+        {
+            "name": "Review Homepage CRO"
+        }
+    ],
+    "settings": [
+        {
+            "type": "text",
+            "default":"See Why Snackers Are Obsessed",
+            "label": "Title",
+            "id": "title"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "card",
+            "name": "Card",
+            "limit": 3,
+            "settings":[
+                {
+                    "type": "text",
+                    "default":"Brittany",
+                    "id": "review_name",
+                    "label": "Name"
+                },
+                {
+                    "type":"text",
+                    "label": "Review",
+                    "id":"review",
+                    "default":"These are just so good. The Tandoori Ranch one was my absolute favorite, I want to be able to buy a shaker of the seasonings."
+                },
+                {
+                    "type":"image_picker",
+                    "label": "Image",
+                    "id":"img"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
