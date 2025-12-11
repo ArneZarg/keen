@@ -17,7 +17,6 @@
     color: {{ section.settings.text_button_hero_color_hover }};
     border-color:{{ section.settings.text_button_hero_color_hover }};
     background-color:{{ section.settings.border }};
-    border: 2px solid
   }
  .hero .highlights{
     margin-top:15%;
@@ -128,6 +127,12 @@ section.hero .reviewstar{
 section.hero.custom-flex .card-hero{
     padding-left:20rem;
 }
+.hero .card-hero a:hover{
+      color: {{ section.settings.text_button_hero_color_hover }};
+      border-color:{{ section.settings.text_button_hero_color_hover }};
+      background-color:{{ section.settings.text_button_hero_color_hover }};
+      background:#023373;
+    }
 @media(max-width: 991px) {
     .hero .highlights{
     margin-top:0;
@@ -147,6 +152,7 @@ section.hero.custom-flex .card-hero{
         margin:0;
         font-size:19px;
     }
+    
     section.hero .reviewstar{
         display: flex;
         align-items:center;
