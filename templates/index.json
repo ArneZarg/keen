@@ -1,1 +1,814 @@
-{"sections":{"new_section_hero_ajUanp":{"type":"new-section-hero","custom_css":["@media (min-width: 991px){.hero .card-hero p {font-size: 24px; line-height: 28px;"],"settings":{"layout":"image","image":"shopify:\/\/shop_images\/New-Hero2April.gif","video":"","color_fondo":"#ffffff","background_section":"#f4d522","review_show":false,"reviewstar":"5","review_text":"2,000 5-star reviews","slide_text_1":"","slide_text_2":"","slide_text_3":"","slide_text_4":"","title_hero":"UNAPOLOGETIC FLAVOR MEETS UNSTOPPABLE CRUNCH.","content":"A crave-worthy crunch with bold flavor and fewer carbs. Big taste, light feel—snacking just got smarter.","link_hero":"shopify:\/\/collections\/all","text_button_hero":"Shop Now","link_hero_2":"","text_button_hero_2":"","text_button_hero_color":"#ffffff","background_primary":"#dd3a32","text_button_hero_color_hover":"#023373","background_hover":"","boder":"#023373","text_button_secondary":"#000000","text_button_secondary_bg":"rgba(0,0,0,0)","text_button_hero_color_hover_secondary":"#ffffff","background_hover_secondary":"#000000","boder_secondary":"","text-align":"left","paragraph":"","text_color":"#000000"}},"media_banner_Yj9BDA":{"type":"media-banner","disabled":true,"settings":{"header_overlay":false,"color_scheme":"background-1","animate_on_scroll":true,"image_1":"shopify:\/\/shop_images\/Daal_models_banner_3_df2c0266-9887-4580-8de9-9ceb1c3cace8.jpg","image_2":"shopify:\/\/shop_images\/cropped-hero-mockup.gif","image_1_mobile":"shopify:\/\/shop_images\/Daal_models_10.jpg","show_video":true,"image_ratio_mobile":"adapt","image_ratio_desktop":"21\/9","overlay_opacity":0,"overlay_as_gradient":true,"section_heading":"HEADER TEST HERE","section_heading_size":"h2","subheading":"","heading":"","heading_size":"h4","description":"","description_width":"recommended","content_align":"center","content_layout":"column","show_button":true,"button_label":"CRUSH YOUR SNACK CRAVING","button_style":"secondary","button_link":"shopify:\/\/collections\/all","button_arrow":true,"margin_top":"no-indent","margin_bottom":"no-indent"}},"popular_products":{"type":"popular-products","custom_css":[],"settings":{"color_scheme":"background-1","animate_on_scroll":true,"subheading":"","heading":"PICK YOUR FLAVOR","heading_size":"h3","description":"Experience a flavor blast with DAAL, the ultimate crispy mung bean snack. Indian-American spice blends that keep you coming back for more.","product_list":["daal-variety-pack-copy-1","tandoori-ranch","sweet-chili-masala","buffalo-chutney"],"color_title":"#231f20","color_description":"#231f20","cards_layout":"bar","mobile_cards_layout":"slider","mobile_slider_layout_type":"with_arrows","products_to_show":4,"column_gap":"1.6","row_gap":"4","image_ratio":"square","image_fit":"cover","show_secondary_image":true,"show_vendor":false,"show_desc":false,"button_show":true,"button_label":"SHOP NOW","button_style":"primary","button_link":"shopify:\/\/collections\/all-products","button_arrow":false,"padding_top":"m","padding_bottom":"no-indent","margin_top":"no-indent","margin_bottom":"no-indent"}},"popular_products_wTp8Da":{"type":"popular-products","settings":{"color_scheme":"background-1","animate_on_scroll":true,"subheading":"","heading":"TURN UP THE HEAT 🔥","heading_size":"h3","description":"Meet the boldest Daal yet: Wild Habanero and Savage Ghost Pepper. Same crispy, crunchy mung beans. Now with a fiery kick.","product_list":["wild-habanero","savage-ghost-pepper"],"color_title":"#231f20","color_description":"#231f20","cards_layout":"bar","mobile_cards_layout":"slider","mobile_slider_layout_type":"with_arrows","products_to_show":4,"column_gap":"1.6","row_gap":"4","image_ratio":"square","image_fit":"cover","show_secondary_image":true,"show_vendor":false,"show_desc":false,"button_show":true,"button_label":"SHOP NOW","button_style":"primary","button_link":"shopify:\/\/pages\/daal-spice-challenge","button_arrow":false,"padding_top":"m","padding_bottom":"no-indent","margin_top":"no-indent","margin_bottom":"no-indent"}},"slideshow_zeefg6":{"type":"slideshow","blocks":{"slide_7eU6fn":{"type":"slide","settings":{"color_scheme":"background-1","image":"shopify:\/\/shop_images\/edit0Daal_models_banner_3_ebe0645d-c342-4f7f-b3c3-16b26e67edef.png","overlay_opacity":20,"show_video":false,"video":"shopify:\/\/files\/videos\/Daal_Models_Group_V1.mp4","subheading":"","heading":"READY TO SNACK SMARTER?","heading_size":"h2","description":"We took real ingredients, bold spices, and a massive love for flavor, and built a snack that hits every craving.","show_button_1":false,"button_style_1":"primary","button_label_1":"SHOP NOW","button_link_1":"shopify:\/\/collections\/all","button_arrow_1":false,"show_button_2":false,"button_style_2":"secondary","button_label_2":"","button_link_2":"","button_arrow_2":false}}},"block_order":["slide_7eU6fn"],"settings":{"layout":"split_screen","full_width":true,"header_overlay":false,"color_scheme":"background-4","image_ratio_mobile":"adapt","image_ratio_desktop":"adapt","align_content":"center","display_order":"content_first","enable_loop":true,"enable_parallax":false,"enable_pagination":true,"enable_autoplay":false,"slide_duration":5,"animation_type":"slide","controls_position":"bottom_left","enable_explore":false,"explore_label":"Scroll to explore","explore_position":"bottom_right","padding_top":"no-indent","padding_bottom":"no-indent","margin_top":"no-indent","margin_bottom":"no-indent"}},"content_cards_tVCJyQ":{"type":"content-cards","blocks":{"content_card_VyAy7f":{"type":"content-card","settings":{"enable_text_block":true,"block_color_scheme":"background-3","block_subheading":"","block_heading":"Packed with protein, fiber, and","block_heading_size":"h3","block_description":"","text_align":"left","vertical_align":"center","show_button":true,"button_label":"SHOP NOW","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_arrow":false,"enable_image_block":true,"image_color_scheme":"","content_order":"image-first","image":"shopify:\/\/shop_images\/Daal_BuffaloChutney-2.jpg","overlay_opacity":0,"show_button_2":false,"button_label_2":"Label","button_link_2":"","button_style_2":"primary","button_arrow_2":true,"text_align_2":"center","vertical_align_2":"end"}},"content_card_HVBq4i":{"type":"content-card","settings":{"enable_text_block":true,"block_color_scheme":"background-3","block_subheading":"","block_heading":"HIGH PROTEIN","block_heading_size":"h3","block_description":"","text_align":"left","vertical_align":"space-between","show_button":true,"button_label":"SHOP NOW","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_arrow":false,"enable_image_block":true,"image_color_scheme":"","content_order":"image-first","image":"shopify:\/\/shop_images\/Daal_TandooriRanch-2.jpg","overlay_opacity":20,"show_button_2":false,"button_label_2":"Label","button_link_2":"","button_style_2":"primary","button_arrow_2":true,"text_align_2":"center","vertical_align_2":"end"}},"content_card_zUKn4m":{"type":"content-card","settings":{"enable_text_block":true,"block_color_scheme":"background-3","block_subheading":"","block_heading":"GUILT FREE SNACKING","block_heading_size":"h3","block_description":"","text_align":"left","vertical_align":"space-between","show_button":true,"button_label":"SHOP NOW","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_arrow":false,"enable_image_block":true,"image_color_scheme":"","content_order":"image-first","image":"shopify:\/\/shop_images\/Daal_SweetChiliMasala-2.jpg","overlay_opacity":20,"show_button_2":false,"button_label_2":"Label","button_link_2":"","button_style_2":"primary","button_arrow_2":true,"text_align_2":"center","vertical_align_2":"end"}}},"block_order":["content_card_VyAy7f","content_card_HVBq4i","content_card_zUKn4m"],"disabled":true,"settings":{"color_scheme":"background-1","cursor_as_button":true,"cards_layout":"slider","mobile_slider_layout_type":"visible_overflow","subheading":"","heading":"","heading_size":"h3","description":"","heading_text_align":"center","padding_top":"xl","padding_bottom":"xs","margin_top":"no-indent","margin_bottom":"no-indent"}},"ticker_banner_CwbnxE":{"type":"ticker-banner","blocks":{"image_block_APhVJ4":{"type":"image_block","settings":{"image":"shopify:\/\/shop_images\/Daal_models_13.jpg","object_fit":"cover"}},"image_block_LpHt6B":{"type":"image_block","settings":{"image":"shopify:\/\/shop_images\/Daal_models_10.jpg","object_fit":"cover"}},"image_block_pyR6cG":{"type":"image_block","settings":{"image":"shopify:\/\/shop_images\/Daal_models_14.jpg","object_fit":"cover"}}},"block_order":["image_block_APhVJ4","image_block_LpHt6B","image_block_pyR6cG"],"disabled":true,"settings":{"color_scheme":"","animate_on_scroll":true,"subtitle":"","text":"","background_image_overlay_opacity":70,"overlay_as_gradient":true,"aspect_ratio_mobile":"adapt","aspect_ratio_desktop":"adapt","object_fit":"cover","blocks_aspect_ratio":"square","ticker_text":"Having fun never tasted so good","ticker_speed":70,"ticker_color":"#ffffff","ticker_color_dm":"#ffffff","ticker_position":"center","show_button":false,"button_label":"Button label","button_link":"","button_style":"primary","button_arrow":true,"show_button_2":false,"button_label_2":"Button label","button_link_2":"","button_style_2":"secondary","button_arrow_2":true,"padding_top":"m","padding_bottom":"m","margin_top":"no-indent","margin_bottom":"no-indent"}},"testimonials_nKJLaV":{"type":"testimonials","blocks":{"testimonials_slide_7H7Bdx":{"type":"testimonials_slide","settings":{"image":"shopify:\/\/shop_images\/SnapTik-dot-Kim-6966cde9c9f60ca1051fb85465abcb57.00_00_06_31.Still001.png","rating":5,"slide_text":"\"Amazing taste right amount of spice can’t get them fast enough\"","slide_author":"Shrinivasan","product":"daal-variety-pack","button_arrow":true}},"testimonials_slide_WeHKXh":{"type":"testimonials_slide","settings":{"image":"shopify:\/\/shop_images\/the-healthy-snack-no-subs-or-music.00_01_44_13.Still003.png","rating":5,"slide_text":"\"These are just so good. The Tandoori Ranch one was my absolute favorite, I want to be able to buy a shaker of the seasonings.\"","slide_author":"Brittany","product":"tandoori-ranch","button_arrow":true}},"testimonials_slide_atJrwp":{"type":"testimonials_slide","settings":{"image":"shopify:\/\/shop_images\/crop-Still002.png","rating":5,"slide_text":"\"All three are SO delicious! Each spice blend is unique, and the crunch is addicting. My personal favorite is Sweet Chili Masala\"","slide_author":"Paui","product":"sweet-chili-masala","button_arrow":true}},"testimonials_slide_E6gWxw":{"type":"testimonials_slide","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2025-10-10_at_2.12.28_PM.png","rating":5,"slide_text":"\"Freaking DELISH\"","slide_author":"Jackie","product":"buffalo-chutney","button_arrow":true}}},"block_order":["testimonials_slide_7H7Bdx","testimonials_slide_WeHKXh","testimonials_slide_atJrwp","testimonials_slide_E6gWxw"],"custom_css":[".testimonials .testimonials-slider-slide__text,.testimonials .body-small {font-family: \"Inter\", sans-serif;}"],"settings":{"color_scheme":"background-1","layout":"with_image","mobile_slider_layout_type":"with_arrows","subheading":"","heading":"","heading_size":"h3","description":"","text_align":"center","slider_heading":"Flavor That Speaks for Itself","slider_text":"","slide_text_size":"h4","aspect_ratio":"square","object_fit":"contain","padding_top":"m","padding_bottom":"m","margin_top":"no-indent","margin_bottom":"no-indent"}},"countdown_VeMyPh":{"type":"countdown","disabled":true,"settings":{"color_scheme":"background-4","content_color_scheme":"","gap":"small","content_order":"image","animate_on_scroll":true,"date_picker":"2030-02-01","time_picker":"00:00","countdown_block_font":"normal","completed_countdown":"hide_section","countdown_heading":"Text after countdown has ended","subheading":"","heading":"Get ready!","heading_size":"h3","description":"","show_link":true,"button_label":"SHOP NOW","button_style":"primary","button_link":"shopify:\/\/collections\/all","button_arrow":false,"content_alignment":"center","enable_image":true,"image":"shopify:\/\/shop_images\/Daal_models_22.jpg","overlay_opacity":0,"padding_top":"s","padding_bottom":"m","margin_top":"no-indent","margin_bottom":"no-indent"}},"featured_item_EW8Jbk":{"type":"featured-item","disabled":true,"settings":{"main_color_scheme":"background-4","content_color_scheme":"background-3","item_type":"collection","article_item":"","collection_item":"all-products","product_item":"","desktop_order":"content-first","heading_size":"h3","show_tags":true,"show_vendor":false,"additional_label":"Shop Now","content_alignment":"left","aspect_ratio":"adapt_to_image","image_size":"recommended","image_part_bg":"#023373","overwrite_subheading":"","overwrite_heading":"WHAT ARE MUNG BEANS?","overwrite_description":"Mung beans are a protein-packed legume with a naturally earthy and slightly nutty flavor. When roasted, they crisp up into a deliciously savory snack! Their light, satisfying crunch makes them an irresistible treat—perfect for when you want something flavorful yet wholesome.","overwrite_url":"","overwrite_image":"shopify:\/\/shop_images\/Daal_group-5_v2.jpg","padding_top":"m","padding_bottom":"m","margin_top":"no-indent","margin_bottom":"no-indent"}},"product_card_slider_H34U4y":{"type":"product-card-slider","disabled":true,"settings":{"color_scheme":"background-4","subheading":"","heading":"","heading_size":"h3","description":"","heading_text_align":"center","section_layout_type":"solid","gap":"small","content_order":"text","full_width":false,"animate_on_scroll":true,"layer_color_scheme":"","content_subheading":"","content_heading":"Why Daal?","content_heading_size":"h2","content_description":"DAAL fills those cravings between meals. Lightly frying mung beans and roasting them with curated spice blends creates a crispy crunchy snack perfect for enjoying any time of day.","show_button":true,"button_label":"SHOP NOW","button_link":"shopify:\/\/collections\/all","button_style":"primary","button_arrow":false,"horizontal_align":"left","vertical_align":"space-between","image":"shopify:\/\/shop_images\/Daal_group-1.jpg","image_ratio_desktop":"2\/1","overlay_opacity":40,"overlay_as_gradient":true,"product_list_heading":"","product_list":["daal-variety-pack"],"product_color_scheme":"","products_vertical_align":"end","card_image_ratio":"portrait","card_image_fit":"cover","enable_autoplay":false,"slide_duration":3,"padding_top":"s","padding_bottom":"s","margin_top":"no-indent","margin_bottom":"no-indent"}},"multicolumn_j3YAPw":{"type":"multicolumn","blocks":{"column_rx3Tzj":{"type":"column","settings":{"heading":"LOW CARB","image":"shopify:\/\/shop_images\/low-carb_9.24.png","image_width":"medium","image_ratio":"square","object_fit":"cover","enable_img_border_radius":true,"add_separator":false,"text":"","show_button":false,"button_label":"Button label","button_link":"","button_style":"primary","button_arrow":true}},"column_UXMpT7":{"type":"column","settings":{"heading":"KEEPS YOU FULL","image":"shopify:\/\/shop_images\/keeps-you-full_new.png","image_width":"medium","image_ratio":"square","object_fit":"cover","enable_img_border_radius":true,"add_separator":false,"text":"","show_button":false,"button_label":"Button label","button_link":"","button_style":"primary","button_arrow":true}},"column_Y7hHMj":{"type":"column","settings":{"heading":"NUT FREE","image":"shopify:\/\/shop_images\/nut-free_9.24.png","image_width":"medium","image_ratio":"square","object_fit":"cover","enable_img_border_radius":true,"add_separator":false,"text":"","show_button":false,"button_label":"Button label","button_link":"","button_style":"primary","button_arrow":true}}},"block_order":["column_rx3Tzj","column_UXMpT7","column_Y7hHMj"],"settings":{"color_scheme":"background-1","subheading":"","heading":"DAAL SNACKS CRACKS THE FLAVOR CODE","heading_size":"h2","description":"","text_align":"center","multicolumn_to_show":4,"column_gap":"0.8","row_gap":"3.2","swipe_on_desktop":false,"swipe_on_mobile":true,"mobile_slider_layout_type":"with_arrows","card_heading_size":"h4","card_heading_font":"body","column_color_scheme":"background-1","card_bg_color":"primary","card_text_color":"primary","card_text_size":"small","enable_column_border":false,"column_padding":"0","column_aspect_ratio":"adapt","content_horizontal_alignment":"center","content_vertical_alignment":"top","column_width":"narrow","padding_top":"s","padding_bottom":"l","margin_top":"no-indent","margin_bottom":"no-indent"}},"image_gallery_66jX6k":{"type":"image-gallery","blocks":{"image_gallery_slide_tR4PVg":{"type":"image-gallery-slide","settings":{"image":"shopify:\/\/shop_images\/Daal_ComparisonChart_Desktop_V1.png","overlay_opacity":0}}},"block_order":["image_gallery_slide_tR4PVg"],"disabled":true,"name":"t:sections.image-gallery.name","settings":{"main_color_scheme":"background-1","subheading":"","heading":"","heading_size":"h3","description":"","text_align":"center","mobile_image_ratio":"adapt","desktop_image_ratio":"adapt","enable_loop":false,"enable_pagination":true,"enable_navigation":false,"arrow_color":"#ffffff","enable_autoplay":false,"slide_duration":1,"padding_top":"s","padding_bottom":"s","margin_top":"no-indent","margin_bottom":"no-indent"}},"social_media_eXAJQq":{"type":"social-media","blocks":{"image_wUP8Bn":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Daal_models_12.jpg"}},"image_H9eCL6":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Daal_models_2.jpg"}},"image_iiMAbN":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Daal_models_6.jpg"}}},"block_order":["image_wUP8Bn","image_H9eCL6","image_iiMAbN"],"disabled":true,"custom_css":[],"settings":{"color_scheme":"","layout":"slider-left","animate_on_scroll":true,"subheading":"","heading":"","heading_size":"h2","description":"","text_align":"center","aspect_ratio":"square","slides_per_view":4,"object_fit":"cover","slider_speed":15,"slider_stop_on_hover":true,"main_text":"<a href=\"https:\/\/www.instagram.com\/daalsnacks\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/daalsnacks\/\">Join us on Instagram<\/a>","link_arrow":true,"main_text_font":"body","main_text_size":"h4","padding_top":"m","padding_bottom":"m","margin_top":"no-indent","margin_bottom":"no-indent"}},"176358939010cf1bec":{"type":"apps","blocks":{"instafeed_app_block_YFXjME":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"DAAL SNACKS IN THE WILD","title_color":"","title_size_v2":0,"alignment":"center","instafeed_margin_top":0,"instafeed_margin_bottom":0,"instafeed_margin_sides":0,"show_instagram_link":true,"link_alignment":"left","link_color":"#000000","background_color":"","feed_id":"","html_area":""}}},"block_order":["instafeed_app_block_YFXjME"],"settings":{"include_margins":true}}},"order":["new_section_hero_ajUanp","media_banner_Yj9BDA","popular_products","popular_products_wTp8Da","slideshow_zeefg6","content_cards_tVCJyQ","ticker_banner_CwbnxE","testimonials_nKJLaV","countdown_VeMyPh","featured_item_EW8Jbk","product_card_slider_H34U4y","multicolumn_j3YAPw","image_gallery_66jX6k","social_media_eXAJQq","176358939010cf1bec"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "new_section_hero_ajUanp": {
+      "type": "new-section-hero",
+      "custom_css": [
+        "@media (min-width: 991px){.hero .card-hero p {font-size: 24px; line-height: 28px;"
+      ],
+      "settings": {
+        "layout": "image",
+        "image": "shopify://shop_images/New-Hero2April.gif",
+        "video": "",
+        "color_fondo": "#ffffff",
+        "background_section": "#f4d522",
+        "review_show": false,
+        "reviewstar": "5",
+        "review_text": "2,000 5-star reviews",
+        "slide_text_1": "",
+        "slide_text_2": "",
+        "slide_text_3": "",
+        "slide_text_4": "",
+        "title_hero": "UNAPOLOGETIC FLAVOR MEETS UNSTOPPABLE CRUNCH.",
+        "content": "A crave-worthy crunch with bold flavor and fewer carbs. Big taste, light feel—snacking just got smarter.",
+        "link_hero": "shopify://collections/all",
+        "text_button_hero": "Shop Now",
+        "link_hero_2": "",
+        "text_button_hero_2": "",
+        "text_button_hero_color": "#ffffff",
+        "background_primary": "#dd3a32",
+        "text_button_hero_color_hover": "#023373",
+        "background_hover": "",
+        "boder": "#023373",
+        "text_button_secondary": "#000000",
+        "text_button_secondary_bg": "rgba(0,0,0,0)",
+        "text_button_hero_color_hover_secondary": "#ffffff",
+        "background_hover_secondary": "#000000",
+        "boder_secondary": "",
+        "text-align": "left",
+        "paragraph": "",
+        "text_color": "#000000"
+      }
+    },
+    "media_banner_Yj9BDA": {
+      "type": "media-banner",
+      "disabled": true,
+      "settings": {
+        "header_overlay": false,
+        "color_scheme": "background-1",
+        "animate_on_scroll": true,
+        "image_1": "shopify://shop_images/Daal_models_banner_3_df2c0266-9887-4580-8de9-9ceb1c3cace8.jpg",
+        "image_2": "shopify://shop_images/cropped-hero-mockup.gif",
+        "image_1_mobile": "shopify://shop_images/Daal_models_10.jpg",
+        "show_video": true,
+        "image_ratio_mobile": "adapt",
+        "image_ratio_desktop": "21/9",
+        "overlay_opacity": 0,
+        "overlay_as_gradient": true,
+        "section_heading": "HEADER TEST HERE",
+        "section_heading_size": "h2",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h4",
+        "description": "",
+        "description_width": "recommended",
+        "content_align": "center",
+        "content_layout": "column",
+        "show_button": true,
+        "button_label": "CRUSH YOUR SNACK CRAVING",
+        "button_style": "secondary",
+        "button_link": "shopify://collections/all",
+        "button_arrow": true,
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular_products": {
+      "type": "popular-products",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "background-1",
+        "animate_on_scroll": true,
+        "subheading": "",
+        "heading": "PICK YOUR FLAVOR",
+        "heading_size": "h3",
+        "description": "Experience a flavor blast with DAAL, the ultimate crispy mung bean snack. Indian-American spice blends that keep you coming back for more.",
+        "product_list": [
+          "daal-variety-pack-copy-1",
+          "tandoori-ranch",
+          "sweet-chili-masala",
+          "buffalo-chutney"
+        ],
+        "color_title": "#231f20",
+        "color_description": "#231f20",
+        "cards_layout": "bar",
+        "mobile_cards_layout": "slider",
+        "mobile_slider_layout_type": "with_arrows",
+        "products_to_show": 4,
+        "column_gap": "1.6",
+        "row_gap": "4",
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "button_show": true,
+        "button_label": "SHOP NOW",
+        "button_style": "primary",
+        "button_link": "shopify://collections/all-products",
+        "button_arrow": false,
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular_products_wTp8Da": {
+      "type": "popular-products",
+      "settings": {
+        "color_scheme": "background-1",
+        "animate_on_scroll": true,
+        "subheading": "",
+        "heading": "TURN UP THE HEAT 🔥",
+        "heading_size": "h3",
+        "description": "Meet the boldest DAAL yet: Wild Habanero and Savage Ghost Pepper. Same crispy, crunchy mung beans. Now with a fiery kick.",
+        "product_list": [
+          "wild-habanero",
+          "savage-ghost-pepper"
+        ],
+        "color_title": "#231f20",
+        "color_description": "#231f20",
+        "cards_layout": "bar",
+        "mobile_cards_layout": "slider",
+        "mobile_slider_layout_type": "with_arrows",
+        "products_to_show": 4,
+        "column_gap": "1.6",
+        "row_gap": "4",
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "button_show": true,
+        "button_label": "SHOP NOW",
+        "button_style": "primary",
+        "button_link": "shopify://pages/daal-spice-challenge",
+        "button_arrow": false,
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "slideshow_zeefg6": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_7eU6fn": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-1",
+            "image": "shopify://shop_images/edit0Daal_models_banner_3_ebe0645d-c342-4f7f-b3c3-16b26e67edef.png",
+            "overlay_opacity": 20,
+            "show_video": false,
+            "video": "shopify://files/videos/Daal_Models_Group_V1.mp4",
+            "subheading": "",
+            "heading": "READY TO SNACK SMARTER?",
+            "heading_size": "h2",
+            "description": "We took real ingredients, bold spices, and a massive love for flavor, and built a snack that hits every craving.",
+            "show_button_1": false,
+            "button_style_1": "primary",
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/all",
+            "button_arrow_1": false,
+            "show_button_2": false,
+            "button_style_2": "secondary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_arrow_2": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_7eU6fn"
+      ],
+      "settings": {
+        "layout": "split_screen",
+        "full_width": true,
+        "header_overlay": false,
+        "color_scheme": "background-4",
+        "image_ratio_mobile": "adapt",
+        "image_ratio_desktop": "adapt",
+        "align_content": "center",
+        "display_order": "content_first",
+        "enable_loop": true,
+        "enable_parallax": false,
+        "enable_pagination": true,
+        "enable_autoplay": false,
+        "slide_duration": 5,
+        "animation_type": "slide",
+        "controls_position": "bottom_left",
+        "enable_explore": false,
+        "explore_label": "Scroll to explore",
+        "explore_position": "bottom_right",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "content_cards_tVCJyQ": {
+      "type": "content-cards",
+      "blocks": {
+        "content_card_VyAy7f": {
+          "type": "content-card",
+          "settings": {
+            "enable_text_block": true,
+            "block_color_scheme": "background-3",
+            "block_subheading": "",
+            "block_heading": "Packed with protein, fiber, and",
+            "block_heading_size": "h3",
+            "block_description": "",
+            "text_align": "left",
+            "vertical_align": "center",
+            "show_button": true,
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_arrow": false,
+            "enable_image_block": true,
+            "image_color_scheme": "",
+            "content_order": "image-first",
+            "image": "shopify://shop_images/Daal_BuffaloChutney-2.jpg",
+            "overlay_opacity": 0,
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "button_arrow_2": true,
+            "text_align_2": "center",
+            "vertical_align_2": "end"
+          }
+        },
+        "content_card_HVBq4i": {
+          "type": "content-card",
+          "settings": {
+            "enable_text_block": true,
+            "block_color_scheme": "background-3",
+            "block_subheading": "",
+            "block_heading": "HIGH PROTEIN",
+            "block_heading_size": "h3",
+            "block_description": "",
+            "text_align": "left",
+            "vertical_align": "space-between",
+            "show_button": true,
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_arrow": false,
+            "enable_image_block": true,
+            "image_color_scheme": "",
+            "content_order": "image-first",
+            "image": "shopify://shop_images/Daal_TandooriRanch-2.jpg",
+            "overlay_opacity": 20,
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "button_arrow_2": true,
+            "text_align_2": "center",
+            "vertical_align_2": "end"
+          }
+        },
+        "content_card_zUKn4m": {
+          "type": "content-card",
+          "settings": {
+            "enable_text_block": true,
+            "block_color_scheme": "background-3",
+            "block_subheading": "",
+            "block_heading": "GUILT FREE SNACKING",
+            "block_heading_size": "h3",
+            "block_description": "",
+            "text_align": "left",
+            "vertical_align": "space-between",
+            "show_button": true,
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_arrow": false,
+            "enable_image_block": true,
+            "image_color_scheme": "",
+            "content_order": "image-first",
+            "image": "shopify://shop_images/Daal_SweetChiliMasala-2.jpg",
+            "overlay_opacity": 20,
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "button_arrow_2": true,
+            "text_align_2": "center",
+            "vertical_align_2": "end"
+          }
+        }
+      },
+      "block_order": [
+        "content_card_VyAy7f",
+        "content_card_HVBq4i",
+        "content_card_zUKn4m"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "cursor_as_button": true,
+        "cards_layout": "slider",
+        "mobile_slider_layout_type": "visible_overflow",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h3",
+        "description": "",
+        "heading_text_align": "center",
+        "padding_top": "xl",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "ticker_banner_CwbnxE": {
+      "type": "ticker-banner",
+      "blocks": {
+        "image_block_APhVJ4": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Daal_models_13.jpg",
+            "object_fit": "cover"
+          }
+        },
+        "image_block_LpHt6B": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Daal_models_10.jpg",
+            "object_fit": "cover"
+          }
+        },
+        "image_block_pyR6cG": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Daal_models_14.jpg",
+            "object_fit": "cover"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_APhVJ4",
+        "image_block_LpHt6B",
+        "image_block_pyR6cG"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "animate_on_scroll": true,
+        "subtitle": "",
+        "text": "",
+        "background_image_overlay_opacity": 70,
+        "overlay_as_gradient": true,
+        "aspect_ratio_mobile": "adapt",
+        "aspect_ratio_desktop": "adapt",
+        "object_fit": "cover",
+        "blocks_aspect_ratio": "square",
+        "ticker_text": "Having fun never tasted so good",
+        "ticker_speed": 70,
+        "ticker_color": "#ffffff",
+        "ticker_color_dm": "#ffffff",
+        "ticker_position": "center",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "button_arrow": true,
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "secondary",
+        "button_arrow_2": true,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "testimonials_nKJLaV": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_7H7Bdx": {
+          "type": "testimonials_slide",
+          "settings": {
+            "image": "shopify://shop_images/SnapTik-dot-Kim-6966cde9c9f60ca1051fb85465abcb57.00_00_06_31.Still001.png",
+            "rating": 5,
+            "slide_text": "\"Amazing taste right amount of spice can’t get them fast enough\"",
+            "slide_author": "Shrinivasan",
+            "product": "daal-variety-pack",
+            "button_arrow": true
+          }
+        },
+        "testimonials_slide_WeHKXh": {
+          "type": "testimonials_slide",
+          "settings": {
+            "image": "shopify://shop_images/the-healthy-snack-no-subs-or-music.00_01_44_13.Still003.png",
+            "rating": 5,
+            "slide_text": "\"These are just so good. The Tandoori Ranch one was my absolute favorite, I want to be able to buy a shaker of the seasonings.\"",
+            "slide_author": "Brittany",
+            "product": "tandoori-ranch",
+            "button_arrow": true
+          }
+        },
+        "testimonials_slide_atJrwp": {
+          "type": "testimonials_slide",
+          "settings": {
+            "image": "shopify://shop_images/crop-Still002.png",
+            "rating": 5,
+            "slide_text": "\"All three are SO delicious! Each spice blend is unique, and the crunch is addicting. My personal favorite is Sweet Chili Masala\"",
+            "slide_author": "Paui",
+            "product": "sweet-chili-masala",
+            "button_arrow": true
+          }
+        },
+        "testimonials_slide_E6gWxw": {
+          "type": "testimonials_slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-10-10_at_2.12.28_PM.png",
+            "rating": 5,
+            "slide_text": "\"Freaking DELISH\"",
+            "slide_author": "Jackie",
+            "product": "buffalo-chutney",
+            "button_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_7H7Bdx",
+        "testimonials_slide_WeHKXh",
+        "testimonials_slide_atJrwp",
+        "testimonials_slide_E6gWxw"
+      ],
+      "custom_css": [
+        ".testimonials .testimonials-slider-slide__text,.testimonials .body-small {font-family: \"Inter\", sans-serif;}"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "layout": "with_image",
+        "mobile_slider_layout_type": "with_arrows",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h3",
+        "description": "",
+        "text_align": "center",
+        "slider_heading": "Flavor That Speaks for Itself",
+        "slider_text": "",
+        "slide_text_size": "h4",
+        "aspect_ratio": "square",
+        "object_fit": "contain",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "countdown_VeMyPh": {
+      "type": "countdown",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-4",
+        "content_color_scheme": "",
+        "gap": "small",
+        "content_order": "image",
+        "animate_on_scroll": true,
+        "date_picker": "2030-02-01",
+        "time_picker": "00:00",
+        "countdown_block_font": "normal",
+        "completed_countdown": "hide_section",
+        "countdown_heading": "Text after countdown has ended",
+        "subheading": "",
+        "heading": "Get ready!",
+        "heading_size": "h3",
+        "description": "",
+        "show_link": true,
+        "button_label": "SHOP NOW",
+        "button_style": "primary",
+        "button_link": "shopify://collections/all",
+        "button_arrow": false,
+        "content_alignment": "center",
+        "enable_image": true,
+        "image": "shopify://shop_images/Daal_models_22.jpg",
+        "overlay_opacity": 0,
+        "padding_top": "s",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "featured_item_EW8Jbk": {
+      "type": "featured-item",
+      "disabled": true,
+      "settings": {
+        "main_color_scheme": "background-4",
+        "content_color_scheme": "background-3",
+        "item_type": "collection",
+        "article_item": "",
+        "collection_item": "all-products",
+        "product_item": "",
+        "desktop_order": "content-first",
+        "heading_size": "h3",
+        "show_tags": true,
+        "show_vendor": false,
+        "additional_label": "Shop Now",
+        "content_alignment": "left",
+        "aspect_ratio": "adapt_to_image",
+        "image_size": "recommended",
+        "image_part_bg": "#023373",
+        "overwrite_subheading": "",
+        "overwrite_heading": "WHAT ARE MUNG BEANS?",
+        "overwrite_description": "Mung beans are a protein-packed legume with a naturally earthy and slightly nutty flavor. When roasted, they crisp up into a deliciously savory snack! Their light, satisfying crunch makes them an irresistible treat—perfect for when you want something flavorful yet wholesome.",
+        "overwrite_url": "",
+        "overwrite_image": "shopify://shop_images/Daal_group-5_v2.jpg",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product_card_slider_H34U4y": {
+      "type": "product-card-slider",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-4",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h3",
+        "description": "",
+        "heading_text_align": "center",
+        "section_layout_type": "solid",
+        "gap": "small",
+        "content_order": "text",
+        "full_width": false,
+        "animate_on_scroll": true,
+        "layer_color_scheme": "",
+        "content_subheading": "",
+        "content_heading": "Why Daal?",
+        "content_heading_size": "h2",
+        "content_description": "DAAL fills those cravings between meals. Lightly frying mung beans and roasting them with curated spice blends creates a crispy crunchy snack perfect for enjoying any time of day.",
+        "show_button": true,
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://collections/all",
+        "button_style": "primary",
+        "button_arrow": false,
+        "horizontal_align": "left",
+        "vertical_align": "space-between",
+        "image": "shopify://shop_images/Daal_group-1.jpg",
+        "image_ratio_desktop": "2/1",
+        "overlay_opacity": 40,
+        "overlay_as_gradient": true,
+        "product_list_heading": "",
+        "product_list": [
+          "daal-variety-pack"
+        ],
+        "product_color_scheme": "",
+        "products_vertical_align": "end",
+        "card_image_ratio": "portrait",
+        "card_image_fit": "cover",
+        "enable_autoplay": false,
+        "slide_duration": 3,
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_j3YAPw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rx3Tzj": {
+          "type": "column",
+          "settings": {
+            "heading": "LOW CARB",
+            "image": "shopify://shop_images/low-carb_9.24.png",
+            "image_width": "medium",
+            "image_ratio": "square",
+            "object_fit": "cover",
+            "enable_img_border_radius": true,
+            "add_separator": false,
+            "text": "",
+            "show_button": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true
+          }
+        },
+        "column_UXMpT7": {
+          "type": "column",
+          "settings": {
+            "heading": "KEEPS YOU FULL",
+            "image": "shopify://shop_images/keeps-you-full_new.png",
+            "image_width": "medium",
+            "image_ratio": "square",
+            "object_fit": "cover",
+            "enable_img_border_radius": true,
+            "add_separator": false,
+            "text": "",
+            "show_button": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true
+          }
+        },
+        "column_Y7hHMj": {
+          "type": "column",
+          "settings": {
+            "heading": "NUT FREE",
+            "image": "shopify://shop_images/nut-free_9.24.png",
+            "image_width": "medium",
+            "image_ratio": "square",
+            "object_fit": "cover",
+            "enable_img_border_radius": true,
+            "add_separator": false,
+            "text": "",
+            "show_button": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "column_rx3Tzj",
+        "column_UXMpT7",
+        "column_Y7hHMj"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "heading": "DAAL SNACKS CRACKS THE FLAVOR CODE",
+        "heading_size": "h2",
+        "description": "",
+        "text_align": "center",
+        "multicolumn_to_show": 4,
+        "column_gap": "0.8",
+        "row_gap": "3.2",
+        "swipe_on_desktop": false,
+        "swipe_on_mobile": true,
+        "mobile_slider_layout_type": "with_arrows",
+        "card_heading_size": "h4",
+        "card_heading_font": "body",
+        "column_color_scheme": "background-1",
+        "card_bg_color": "primary",
+        "card_text_color": "primary",
+        "card_text_size": "small",
+        "enable_column_border": false,
+        "column_padding": "0",
+        "column_aspect_ratio": "adapt",
+        "content_horizontal_alignment": "center",
+        "content_vertical_alignment": "top",
+        "column_width": "narrow",
+        "padding_top": "s",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_gallery_66jX6k": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_gallery_slide_tR4PVg": {
+          "type": "image-gallery-slide",
+          "settings": {
+            "image": "shopify://shop_images/Daal_ComparisonChart_Desktop_V1.png",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_gallery_slide_tR4PVg"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-gallery.name",
+      "settings": {
+        "main_color_scheme": "background-1",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h3",
+        "description": "",
+        "text_align": "center",
+        "mobile_image_ratio": "adapt",
+        "desktop_image_ratio": "adapt",
+        "enable_loop": false,
+        "enable_pagination": true,
+        "enable_navigation": false,
+        "arrow_color": "#ffffff",
+        "enable_autoplay": false,
+        "slide_duration": 1,
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "social_media_eXAJQq": {
+      "type": "social-media",
+      "blocks": {
+        "image_wUP8Bn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Daal_models_12.jpg"
+          }
+        },
+        "image_H9eCL6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Daal_models_2.jpg"
+          }
+        },
+        "image_iiMAbN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Daal_models_6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_wUP8Bn",
+        "image_H9eCL6",
+        "image_iiMAbN"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "layout": "slider-left",
+        "animate_on_scroll": true,
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "text_align": "center",
+        "aspect_ratio": "square",
+        "slides_per_view": 4,
+        "object_fit": "cover",
+        "slider_speed": 15,
+        "slider_stop_on_hover": true,
+        "main_text": "<a href=\"https://www.instagram.com/daalsnacks/\" target=\"_blank\" title=\"https://www.instagram.com/daalsnacks/\">Join us on Instagram</a>",
+        "link_arrow": true,
+        "main_text_font": "body",
+        "main_text_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "176358939010cf1bec": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_YFXjME": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "DAAL SNACKS IN THE WILD",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_YFXjME"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "new_section_hero_ajUanp",
+    "media_banner_Yj9BDA",
+    "popular_products",
+    "popular_products_wTp8Da",
+    "slideshow_zeefg6",
+    "content_cards_tVCJyQ",
+    "ticker_banner_CwbnxE",
+    "testimonials_nKJLaV",
+    "countdown_VeMyPh",
+    "featured_item_EW8Jbk",
+    "product_card_slider_H34U4y",
+    "multicolumn_j3YAPw",
+    "image_gallery_66jX6k",
+    "social_media_eXAJQq",
+    "176358939010cf1bec"
+  ]
+}
