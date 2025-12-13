@@ -20,6 +20,10 @@
   }
  .hero .highlights{
     margin-top:15%;
+    margin-bottom:15%;
+    svg{
+      width:100%;
+    }
 }
 
 .hero .card-hero {
@@ -34,6 +38,7 @@ section.hero.custom-flex {
     gap: 0;
     overflow: hidden;
     flex-direction:row-reverse;
+    padding-top:50px;
 }
 
 .hero.custom-flex video {
@@ -67,6 +72,16 @@ section.hero.custom-flex .card-hero .h1 {
 
 hero.custom-flex .hero_review svg {
   width: 100px
+}
+.img-hero-mobile{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  justify-content:end;
+}
+.img-hero-mobile img{
+  width:80%;
+  height:80%;
 }
 a.hero_btn + .hero_btn {
     margin-left: 30px;
@@ -115,6 +130,12 @@ section.hero .reviewstar{
     align-items:center;
     gap: 7px;
     margin-bottom: 12px;
+    svg{
+      width:105px;
+    }
+    span{
+      font-size:17px;
+    }
 }
 .hero .card-hero h1{
     color: #000;
@@ -123,6 +144,7 @@ section.hero .reviewstar{
     font-weight: 700;
     line-height: 40px; /* 80% */
     text-transform: uppercase;
+    margin-bottom:0;
 }
 section.hero.custom-flex .card-hero{
     padding-left:20rem;
@@ -134,6 +156,9 @@ section.hero.custom-flex .card-hero{
       background:#023373;
     }
 @media(max-width: 991px) {
+  .img-hero-mobile img{
+    width:100%;
+  }
     .hero .highlights{
     margin-top:0;
     width:311px;
@@ -159,7 +184,7 @@ section.hero.custom-flex .card-hero{
         gap: 7px;
         margin-bottom: 12px;
         svg{
-            width:100px;
+            width:105px;
         }
         span{
             font-size:13px;
@@ -323,8 +348,8 @@ section.hero.custom-flex .card-hero{
        {{ section.settings.paragraph }}
        
        <div class="highlights">
-        {% comment %} {% render 'highlights-black' %} {% endcomment %}
-         <img src="https://cdn.shopify.com/s/files/1/0641/9169/2992/files/h-black.png?v=1765417135">
+        {% render 'highlights-black' %}
+         {% comment %} <img src="https://cdn.shopify.com/s/files/1/0641/9169/2992/files/h-black.png?v=1765417135"> {% endcomment %}
        </div>
   </div>
 </section>

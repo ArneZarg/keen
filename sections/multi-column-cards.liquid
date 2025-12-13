@@ -12,7 +12,7 @@
     }
     #mc-cards-{{ section.id }} .card{
         padding:30px;
-        border-radius: 10px;
+        border-radius: 20px;
         background: #F9D200;
         display:flex;
         flex-direction:column;
@@ -22,6 +22,7 @@
     }
     #mc-cards-{{ section.id }} .card-img{
         margin-bottom:25px;
+        width:65px;
         img{
             width:100%;
         }
@@ -69,6 +70,9 @@
         }
     }
     @media(min-width:990px){
+        #mc-cards-{{ section.id }}{
+            padding:120px 0;
+        }
         #mc-cards-{{ section.id }} .cards-row{
             grid-template-columns:repeat(4,1fr);
         }
@@ -117,8 +121,9 @@
 <div id="mc-cards-{{ section.id }}">
     <div class="desk-wave-top">
         <svg width="1719" height="40" viewBox="0 0 1719 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1254.48 24.2862C1382.39 31.9249 1617.46 18.1973 1719 10.3787V0H0V26.1544C10.249 28.161 131.5 40 179.5 40C236.501 40 574.734 15.7757 711.914 8.9257C849.093 2.07574 1094.6 14.7377 1254.48 24.2862Z" fill="#F9D200"/>
-        </svg>
+<path d="M1254.48 24.2862C1382.39 31.9249 1617.46 7.81865 1719 0H0C10.249 2.00655 114.5 40 221.499 40C278.5 40 574.734 15.7757 711.914 8.9257C849.093 2.07574 1094.6 14.7377 1254.48 24.2862Z" fill="#F9D200"/>
+</svg>
+        
     </div>
     <div class="container">
         <h2 class="section-title h2">{{ section.settings.title }}</h2>
@@ -142,8 +147,9 @@
         </div>
     </div>
     <div class="desk-wave-bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1719" height="36" viewBox="0 0 1719 36" fill="none">
-            <path d="M464.518 14.1424C336.61 7.26756 101.544 19.6224 0 26.6592V36H1719V12.461C1708.75 10.6551 1587.5 0 1539.5 0C1482.5 0 1144.27 21.8019 1007.09 27.9669C869.907 34.1318 624.403 22.736 464.518 14.1424Z" fill="#F9D200"/>
+        
+<svg width="1719" height="40" viewBox="0 0 1719 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1254.48 15.7138C1382.39 8.07507 1617.46 32.1814 1719 40H0C10.249 37.9934 114.5 0 221.499 0C278.5 0 574.734 24.2243 711.914 31.0743C849.093 37.9243 1094.6 25.2623 1254.48 15.7138Z" fill="#F9D200"/>
         </svg>
     </div>
     <div class="mobile-wave">
